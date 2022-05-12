@@ -2,7 +2,6 @@
 
 Funcionalidade: Tela de Cadastro
 
-@obrigatorio
 Esquema do Cenario: Não preencher campos obrigatorios
 Dado que acesso a pagina principal
 Quando prencho "<name>", "<last_name>", "<email>", "<password>" e "<confirm_password>"
