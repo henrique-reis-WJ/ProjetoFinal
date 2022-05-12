@@ -1,14 +1,17 @@
 #language: pt
 
-Funcionalidade: Cadastro
+Funcionalidade: Tela de Cadastro
 
 Esquema do Cenario: Não preencher campos obrigatorios
-Dado que acesso a 'pagina principal'
-Quando faço login com '<email>' e '<password>'
-Então devo ver a mensagem 'message'
+Dado que acesso a pagina principal
+Quando prencho "<name>", "<last_name>", "<email>", "<password>" e "<confirm_password>"
+Então devo ver a mensagem "<message>"
 
 Exemplos:
-| email                | password | message                   |
-|                      |          | Esse campo é obrigatório. |
-|                      | Abc1234* | Esse campo é obrigatório. |
-| qatyz@mailinator.com |          | Esse campo é obrigatório. |
+| name     | last_name | email                | password | confirm_password | message                   |
+|          |           |                      |          |                  | Esse campo é obrigatório. |
+|          | Moura     | qatyz@mailinator.com | Abc1234* | Abc1234*         | Esse campo é obrigatório. |
+| Bianca   |           | qatyz@mailinator.com | Abc1234* | Abc1234*         | Esse campo é obrigatório. |
+| Bianca   | Moura     |                      | Abc1234* | Abc1234*         | Esse campo é obrigatório. |
+| Bianca   | Moura     | qatyz@mailinator.com |          | Abc1234*         | Esse campo é obrigatório. |
+| Bianca   | Moura     | qatyz@mailinator.com | Abc1234* |                  | Esse campo é obrigatório. |

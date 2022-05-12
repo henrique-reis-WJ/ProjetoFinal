@@ -1,9 +1,12 @@
 #language: pt
 
-Funcionalidade: Cadastro
+Funcionalidade: Tela de Cadastro
 
-Cenario: Cadastro com sucesso
-Dado que acesso a 'pagina principal'
-Quando faço login com 'qatyz@mailinator.com' e 'Abc1234*'
-Então devo ser autenticado com sucesso
-E devo ver a mensagem “ “
+Esquema do Cenario: Cadastro com sucesso
+Dado que acesso a pagina principal
+Quando prencho "<name>", "<last_name>", "<email>", "<password>" e "<confirm_password>"
+Então devo ver a mensagem "<message>"
+
+Exemplos:
+| name     | last_name | email                | password  | confirm_password | message                                      |
+| Bianca   | Moura     | xeki@mailinator.com  | Abcd1234* | Abcd1234*         | Obrigado por registrar-se com Festas Store. |
