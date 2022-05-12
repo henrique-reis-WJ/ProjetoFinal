@@ -2,6 +2,7 @@
 
 Funcionalidade: Tela de Cadastro
 
+@cadastro_existente
 Esquema do Cenario: E-mail já cadastrado
 Dado que acesso a pagina principal
 Quando prencho "<name>", "<last_name>", "<email>", "<password>" e "<confirm_password>"
