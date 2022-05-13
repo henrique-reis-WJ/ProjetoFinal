@@ -2,16 +2,20 @@ class Login
 include Capybara::DSL
        
     def LoginLink
-        click_link 'Sign In'
+        click_link 'Entrar'
     end
     
     def FieldsLogin (p_email, p_senha)
         find('#email').set p_email
         find('#pass').set p_senha
-        click_button 'Sign In'
+        find('#send2').click
     end
     
-    def ResultLogin 
-        wait 5.seconds until assert_text('Veronica Costello') 
+    def ResultLoginOK
+        wait 5.seconds until assert_text ('Minha Conta')
+    end
+
+    def ResultLoginError
+        wait 5.seconds until assert_text()
     end
 end

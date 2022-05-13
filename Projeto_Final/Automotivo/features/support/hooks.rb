@@ -1,3 +1,8 @@
+Before do
+    Capybara.current_session.driver.browser.manage.delete_all_cookies
+    page.driver.browser.manage.window.resize_to(1920, 768)
+end
+
 After do |scenario|
     Dir.mkdir('Data') unless Dir.exist?('Data')
     Dir.mkdir('Data/reports') unless Dir.exist?('Data/reports')
