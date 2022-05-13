@@ -2,10 +2,13 @@
 
 Funcionalidade: Realizar Cadastro
 
-    @cadSucesso
-    Cenário: Cadastro Com Sucesso
-        Dado que estou na 'pagina inicial' 
-        E quero realizar um cadastro
-        E preencho nome 'Henrique' e sobrenome 'Ribeiro'
-        E preencho 'henrique.reis@webjump.com.br' e 'minhasenha1A@'
-        Então devo ser cadastrado com sucesso 
+    @cadastroSucesso
+    Esquema do Cenário: Cadastro Válido
+        Dado que estou na 'pagina inicial'
+        Quando quero realizar um cadastro 
+        E preencho '<nome>', '<sobrenome>', '<email>', '<senha>', '<confirmar_senha>'
+        Então devo ler '<mensagem>'
+
+        Exemplos: Dados Válidos
+        |nome    |sobrenome|email                       |senha   |confirmar_senha|mensagem    |
+        |Henrique|Ribeiro|henrique.reis@webjump.com.br|pa$$Wrd!  |pa$$Wrd!       |Obrigado por|

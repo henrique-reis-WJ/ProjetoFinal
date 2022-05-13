@@ -1,21 +1,18 @@
-CreateAccount = CreateAccount.new
+createAccount = CreateAccount.new
 
 Dado("que estou na {string}") do |string|
     visit '/'
 end
   
-Dado("quero realizar um cadastro") do
-   CreateAccount.Account
-end
-
-Dado("preencho nome {string} e sobrenome {string}") do |name, lastname|
-    CreateAccount.FieldsName(name, lastname)
+Quando("quero realizar um cadastro") do
+    createAccount.BtnCreate
 end
   
-Dado("preencho {string} e {string}") do |email, password|
-    CreateAccount.FieldsEmail(email, password)
+Quando("preencho {string}, {string}, {string}, {string}, {string}") do |name, lastname, email, passwrd, confirm_passwrd|
+    createAccount.Fields(name, lastname, email, passwrd, confirm_passwrd)
+    click_button 'Criar conta'  
 end
-
-Então("devo ser cadastrado com sucesso") do
-    CreateAccount.AccountSucess
+  
+Então("devo ler {string}") do |message|
+    createAccount.Result(message)
 end
