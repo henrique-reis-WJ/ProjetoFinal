@@ -2,7 +2,7 @@
 
 Funcionalidade: Cadastro Campos Obrigatórios
     
-    @camposVazios
+    @cadVazios
     Esquema do Cenário: Campos Obrigatórios
         Dado que estou na 'pagina inicial'
         Quando quero realizar um cadastro 

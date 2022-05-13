@@ -2,7 +2,7 @@
 
 Funcionalidade: Cadastro Dados Inválida
     
-    @cadastroInvalido
+    @cadInvalido
     Esquema do Cenário: Cadastro Inválido
         Dado que estou na 'pagina inicial'
         Quando quero realizar um cadastro 

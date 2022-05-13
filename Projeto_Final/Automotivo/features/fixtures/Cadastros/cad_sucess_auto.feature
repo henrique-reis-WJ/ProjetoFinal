@@ -2,7 +2,7 @@
 
 Funcionalidade: Realizar Cadastro
 
-    @cadastroSucesso
+    @cadSucesso
     Esquema do Cenário: Cadastro Válido
         Dado que estou na 'pagina inicial'
         Quando quero realizar um cadastro 
