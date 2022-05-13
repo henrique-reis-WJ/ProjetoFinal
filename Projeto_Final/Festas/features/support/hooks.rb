@@ -1,5 +1,5 @@
 After do |scenario|
-    image_name = "Data/Reports/img/imagem-1.png"
+    image_name = "Data/Reports/img/imagem-festas.png"
     temp_shot = page.save_screenshot(image_name)
     file_shot = File.open(temp_shot, "rb").read
     final_shot = Base64.encode64(file_shot)
