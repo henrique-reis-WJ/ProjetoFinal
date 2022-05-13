@@ -3,6 +3,9 @@ class CreateAccount
 
     def access_page
         visit 'http://festas.magentoteste.local/'
+    end
+
+    def access_create_account
         click_link 'Criar conta'
     end
 
@@ -12,6 +15,14 @@ class CreateAccount
         find_by_id('email_address').set email
         find_by_id('password').set password
         find_by_id('password-confirmation').set confirm_password
+    end
+
+    def fake_fields
+        find_by_id('firstname').set (Faker::Name.name)
+        find_by_id('lastname').set (Faker::Name.name)
+        find_by_id('email_address').set (Faker::Internet.email)
+        find_by_id('password').set ('Abc1234*')
+        find_by_id('password-confirmation').set ('Abc1234*')
     end
 
     def click_but 

@@ -1,13 +1,11 @@
 #language: pt
 
-Funcionalidade: Tela de Cadastro
+Funcionalidade: Tela de Cadastro - Cadastro com sucesso
 
 @sucesso
-Esquema do Cenario: Cadastro com sucesso
+Cenario: Cadastro com sucesso
 Dado que acesso a pagina principal
-Quando prencho "<name>", "<last_name>", "<email>", "<password>" e "<confirm_password>"
-Então devo ver a mensagem "<message>"
-
-Exemplos:
-| name     | last_name | email                  | password  | confirm_password | message                                      |
-| Bianca   | Moura     | vyqemu@mailinator.com  | Abcd1234* | Abcd1234*        | Obrigado por registrar-se com Festas Store. |
+E clico em criar conta
+Quando prencho nome, sobrenome, email, senha e confirmar senha
+E clico no botão criar conta
+Então devo ver a mensagem 'Obrigado por registrar-se com Festas Store.'

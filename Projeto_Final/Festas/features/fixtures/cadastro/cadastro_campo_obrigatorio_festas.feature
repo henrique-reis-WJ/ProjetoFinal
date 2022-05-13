@@ -1,11 +1,13 @@
 #language: pt
 
-Funcionalidade: Tela de Cadastro
+Funcionalidade: Tela de Cadastro - Campo Obrigatório
 
 @obrigatorio
-Esquema do Cenario: Não preencher campos obrigatorios
+Esquema do Cenario: Não preencher campos obrigatórios
 Dado que acesso a pagina principal
+E clico em criar conta
 Quando prencho "<name>", "<last_name>", "<email>", "<password>" e "<confirm_password>"
+E clico no botão criar conta
 Então devo ver a mensagem "<message>"
 
 Exemplos:

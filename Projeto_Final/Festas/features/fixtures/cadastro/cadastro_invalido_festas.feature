@@ -1,11 +1,13 @@
 #language: pt
 
-Funcionalidade: Tela de Cadastro
+Funcionalidade: Tela de Cadastro - Dados Inválidos
 
 @invalido
 Esquema do Cenario: Dados inválidos
 Dado que acesso a pagina principal
+E clico em criar conta
 Quando prencho "<name>", "<last_name>", "<email>", "<password>" e "<confirm_password>"
+E clico no botão criar conta
 Então devo ver a mensagem "<message>"
 
 Exemplos:
