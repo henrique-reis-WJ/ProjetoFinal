@@ -19,15 +19,26 @@ Para realizar os testes, entre em cada uma das pastas das lojas (Automotivo e Fe
 
 ***cucumber init***
 
-📝 Analise dos testes
+📝 Analise dos Testes
+
+
 Para visualizar o report das lojas procure dentro da pasta do projeto desejado, exemplo: Automotivo > Data > Reports e abra o arquivo Relatorio.html
 
 👥 Colaborando
+
+
 Para obter detalhes sobre o nosso código de conduta e o processo para nos enviar pedidos de solicitação.
-    Autores
-  **Estágiario de Qa** - [Bianca Fernandes Moura](https://github.com/biancamoura-wbj)
-  **Estágiario de Qa** - [Henrique Ribeiro dos Reis](https://github.com/henrique-reis-WJ)
+
+ ***Autores***
+    
+    
+ * **Estágiario de Qa** - [Bianca Fernandes Moura](https://github.com/biancamoura-wbj)
+  
+  
+ * **Estágiario de Qa** - [Henrique Ribeiro dos Reis](https://github.com/henrique-reis-WJ)
   
 📚 Mentores
+
+
 * **Qa** - Weslley Costa
 * **Qa** - Hudson Brito
