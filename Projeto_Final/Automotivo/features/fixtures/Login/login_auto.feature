@@ -18,5 +18,8 @@ Funcionalidade: Realizar Login
 
     Exemplos: Dados Inválidos
     |email                        |senha    |mensagem                                      |
-    |henrique                     |senha123@|Por favor insira um endereço de email válido  |
     |henrique.reis@webjump.com.br |senha    |O login da conta estava incorreto ou sua conta|
+    |henrique.reis@webjump.com.br |senha123@|O login da conta estava incorreto ou sua conta|
+    |henrique                     |senha123@|Por favor insira um endereço de email válido  |
+    |                             |senha    |Esse campo é obrigatório.                     |
+    |henrique.reis@webjump.com.br |         |Esse campo é obrigatório.                     |
