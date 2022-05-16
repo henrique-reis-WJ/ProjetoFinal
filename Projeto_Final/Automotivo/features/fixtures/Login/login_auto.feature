@@ -1,5 +1,6 @@
 #language:pt
 
+@login
 Funcionalidade: Realizar Login
 
     @loginValido
