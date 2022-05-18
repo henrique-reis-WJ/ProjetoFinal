@@ -7,7 +7,7 @@ Esquema do Cenario: Preencher dados inexistentes
 Dado que acesso a pagina principal
 E clico em entrar
 Quando preencho "<email>" e "<password>"
-E clico no botão
+E clico no botão entre
 Então devo ver a mensagem "<message>"
 
 Exemplos:
@@ -19,7 +19,7 @@ Esquema do Cenario: Preencher dados inválidos
 Dado que acesso a pagina principal
 E clico em entrar
 Quando preencho "<email>" e "<password>"
-E clico no botão
+E clico no botão entre
 Então devo ver a mensagem "<message>"
 
 Exemplos:
@@ -32,7 +32,7 @@ Esquema do Cenario: Não preencher campos obrigatorios
 Dado que acesso a pagina principal
 E clico em entrar
 Quando preencho "<email>" e "<password>"
-E clico no botão
+E clico no botão entre
 Então devo ver a mensagem "<message>"
 
 Exemplos:
@@ -46,7 +46,7 @@ Esquema do Cenario: Realizar login com sucesso
 Dado que acesso a pagina principal
 E clico em entrar
 Quando preencho "<email>" e "<password>"
-E clico no botão
+E clico no botão entre
 Então devo fazer login sucesso
 
 Exemplos:
