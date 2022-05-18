@@ -2,7 +2,7 @@ class Login
 include Capybara::DSL
        
     def LoginLink
-        click_link 'Entrar'
+        click_link 'Entre'
     end
     
     def FieldsLogin (p_email, p_senha)

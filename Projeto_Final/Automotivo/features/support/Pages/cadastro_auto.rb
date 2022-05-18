@@ -2,7 +2,7 @@ class CreateAccount
 include Capybara::DSL
 
     def BtnCreate
-        click_link 'Criar conta'
+        click_link 'Cadastre-se'
     end 
 
     def FieldsSchema (name_p, lastname_p, email_p, password_p, confirm_pass_p)
@@ -11,7 +11,7 @@ include Capybara::DSL
         find('#email_address').set email_p
         find('#password').set password_p
         find('#password-confirmation').set confirm_pass_p
-        click_button 'Criar conta'
+        click_button 'Cadastre-se'
     end
 
     def FieldsFake
@@ -20,7 +20,7 @@ include Capybara::DSL
         find('#email_address').set(Faker::Internet.email)
         find('#password').set('pa$$W0rd')
         find('#password-confirmation').set('pa$$W0rd')
-        click_button 'Criar conta'
+        click_button 'Cadastre-se'
     end
     
     def ResultOK (message_p)
