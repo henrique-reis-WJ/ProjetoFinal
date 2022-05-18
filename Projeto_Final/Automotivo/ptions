@@ -1,0 +1,1506 @@
+Using the default, html, bdd, json and chrome profiles...
+# language: pt
+[36m@busca[0m
+Funcionalidade: Realizar Busca no Site
+
+  [36m@buscaValidaLog[0m
+  Cenário: Busca Valida Sem Login[90m                                         # features/fixtures/Busca/busca_auto.feature:7[0m
+    [32mDado que quero fazer uma busca[90m                                        # features/step_definitions/steps_busca_auto.rb:3[0m[0m
+    [32mQuando clico na barra de pesquisa e digito corretamente [32m[1m'Hero Hoodie'[0m[0m[32m[90m # features/step_definitions/steps_busca_auto.rb:7[0m[0m
+    [31mEntão verei a mensagem [31m[1m'Search results for'[0m[0m[31m[90m                           # features/step_definitions/steps_busca_auto.rb:11[0m[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4b3c8e <unknown>[0m
+[31m      #4 0x55a8df4b5302 <unknown>[0m
+[31m      #5 0x55a8df4ad6f6 <unknown>[0m
+[31m      #6 0x55a8df4c5972 <unknown>[0m
+[31m      #7 0x55a8df52aea1 <unknown>[0m
+[31m      #8 0x55a8df5184e3 <unknown>[0m
+[31m      #9 0x55a8df4edd1a <unknown>[0m
+[31m      #10 0x55a8df4eee75 <unknown>[0m
+[31m      #11 0x55a8df792efd <unknown>[0m
+[31m      #12 0x55a8df7ac19b <unknown>[0m
+[31m      #13 0x55a8df794c65 <unknown>[0m
+[31m      #14 0x55a8df7acec8 <unknown>[0m
+[31m      #15 0x55a8df788360 <unknown>[0m
+[31m      #16 0x55a8df7c8a68 <unknown>[0m
+[31m      #17 0x55a8df7c8be8 <unknown>[0m
+[31m      #18 0x55a8df7e27fd <unknown>[0m
+[31m      #19 0x7f42a916d609 <unknown>[0m
+[31m      ./features/support/Pages/busca_auto.rb:10:in `ResultSearch'[0m
+[31m      ./features/step_definitions/steps_busca_auto.rb:12:in `"verei a mensagem {string}"'[0m
+[31m      features/fixtures/Busca/busca_auto.feature:10:in `Então verei a mensagem 'Search results for''[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4b35a9 <unknown>[0m
+[31m      #4 0x55a8df4b5302 <unknown>[0m
+[31m      #5 0x55a8df4ad6f6 <unknown>[0m
+[31m      #6 0x55a8df4c5972 <unknown>[0m
+[31m      #7 0x55a8df52aea1 <unknown>[0m
+[31m      #8 0x55a8df5184e3 <unknown>[0m
+[31m      #9 0x55a8df4edd1a <unknown>[0m
+[31m      #10 0x55a8df4eee75 <unknown>[0m
+[31m      #11 0x55a8df792efd <unknown>[0m
+[31m      #12 0x55a8df7ac19b <unknown>[0m
+[31m      #13 0x55a8df794c65 <unknown>[0m
+[31m      #14 0x55a8df7acec8 <unknown>[0m
+[31m      #15 0x55a8df788360 <unknown>[0m
+[31m      #16 0x55a8df7c8a68 <unknown>[0m
+[31m      #17 0x55a8df7c8be8 <unknown>[0m
+[31m      #18 0x55a8df7e27fd <unknown>[0m
+[31m      #19 0x7f42a916d609 <unknown>[0m
+[31m      ./features/support/hooks.rb:10:in `After'[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4a435d <unknown>[0m
+[31m      #4 0x55a8df520d77 <unknown>[0m
+[31m      #5 0x55a8df5185b8 <unknown>[0m
+[31m      #6 0x55a8df4edd1a <unknown>[0m
+[31m      #7 0x55a8df4eee75 <unknown>[0m
+[31m      #8 0x55a8df792efd <unknown>[0m
+[31m      #9 0x55a8df7ac19b <unknown>[0m
+[31m      #10 0x55a8df794c65 <unknown>[0m
+[31m      #11 0x55a8df7acec8 <unknown>[0m
+[31m      #12 0x55a8df788360 <unknown>[0m
+[31m      #13 0x55a8df7c8a68 <unknown>[0m
+[31m      #14 0x55a8df7c8be8 <unknown>[0m
+[31m      #15 0x55a8df7e27fd <unknown>[0m
+[31m      #16 0x7f42a916d609 <unknown>[0m
+
+  [36m@buscaInvalidaDes[0m
+  Cenário: Busca Invalida Sem Login[90m                                     # features/fixtures/Busca/busca_auto.feature:13[0m
+[31m chrome not reachable[0m
+[31m   (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m #0 0x55a8df764ad3 <unknown>[0m
+[31m #1 0x55a8df4c43ff <unknown>[0m
+[31m #2 0x55a8df4b2b94 <unknown>[0m
+[31m #3 0x55a8df4b35a9 <unknown>[0m
+[31m #4 0x55a8df4b5302 <unknown>[0m
+[31m #5 0x55a8df4ad6f6 <unknown>[0m
+[31m #6 0x55a8df4c5972 <unknown>[0m
+[31m #7 0x55a8df52aea1 <unknown>[0m
+[31m #8 0x55a8df5184e3 <unknown>[0m
+[31m #9 0x55a8df4edd1a <unknown>[0m
+[31m #10 0x55a8df4eee75 <unknown>[0m
+[31m #11 0x55a8df792efd <unknown>[0m
+[31m #12 0x55a8df7ac19b <unknown>[0m
+[31m #13 0x55a8df794c65 <unknown>[0m
+[31m #14 0x55a8df7acec8 <unknown>[0m
+[31m #15 0x55a8df788360 <unknown>[0m
+[31m #16 0x55a8df7c8a68 <unknown>[0m
+[31m #17 0x55a8df7c8be8 <unknown>[0m
+[31m #18 0x55a8df7e27fd <unknown>[0m
+[31m #19 0x7f42a916d609 <unknown>[0m
+[31m ./features/support/hooks.rb:2:in `Before'[0m
+    [36mDado que quero fazer uma busca[90m                                      # features/step_definitions/steps_busca_auto.rb:3[0m[0m
+    [36mQuando clico na barra de pesquisa e digito incorretamente [36m[1m'Magento'[0m[0m[36m[90m # features/step_definitions/steps_busca_auto.rb:15[0m[0m
+    [36mEntão não verei os resultados [36m[1m'Your search returned no results.'[0m[0m[36m[90m    # features/step_definitions/steps_busca_auto.rb:19[0m[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4b35a9 <unknown>[0m
+[31m      #4 0x55a8df4b5302 <unknown>[0m
+[31m      #5 0x55a8df4ad6f6 <unknown>[0m
+[31m      #6 0x55a8df4c5972 <unknown>[0m
+[31m      #7 0x55a8df52aea1 <unknown>[0m
+[31m      #8 0x55a8df5184e3 <unknown>[0m
+[31m      #9 0x55a8df4edd1a <unknown>[0m
+[31m      #10 0x55a8df4eee75 <unknown>[0m
+[31m      #11 0x55a8df792efd <unknown>[0m
+[31m      #12 0x55a8df7ac19b <unknown>[0m
+[31m      #13 0x55a8df794c65 <unknown>[0m
+[31m      #14 0x55a8df7acec8 <unknown>[0m
+[31m      #15 0x55a8df788360 <unknown>[0m
+[31m      #16 0x55a8df7c8a68 <unknown>[0m
+[31m      #17 0x55a8df7c8be8 <unknown>[0m
+[31m      #18 0x55a8df7e27fd <unknown>[0m
+[31m      #19 0x7f42a916d609 <unknown>[0m
+[31m      ./features/support/hooks.rb:10:in `After'[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4a435d <unknown>[0m
+[31m      #4 0x55a8df520d77 <unknown>[0m
+[31m      #5 0x55a8df5185b8 <unknown>[0m
+[31m      #6 0x55a8df4edd1a <unknown>[0m
+[31m      #7 0x55a8df4eee75 <unknown>[0m
+[31m      #8 0x55a8df792efd <unknown>[0m
+[31m      #9 0x55a8df7ac19b <unknown>[0m
+[31m      #10 0x55a8df794c65 <unknown>[0m
+[31m      #11 0x55a8df7acec8 <unknown>[0m
+[31m      #12 0x55a8df788360 <unknown>[0m
+[31m      #13 0x55a8df7c8a68 <unknown>[0m
+[31m      #14 0x55a8df7c8be8 <unknown>[0m
+[31m      #15 0x55a8df7e27fd <unknown>[0m
+[31m      #16 0x7f42a916d609 <unknown>[0m
+
+  [36m@buscaValidaLogado[0m
+  Cenário: Busca Valida Logado[90m        # features/fixtures/Busca/busca_auto.feature:19[0m
+[31m chrome not reachable[0m
+[31m   (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m #0 0x55a8df764ad3 <unknown>[0m
+[31m #1 0x55a8df4c43ff <unknown>[0m
+[31m #2 0x55a8df4b2b94 <unknown>[0m
+[31m #3 0x55a8df4b35a9 <unknown>[0m
+[31m #4 0x55a8df4b5302 <unknown>[0m
+[31m #5 0x55a8df4ad6f6 <unknown>[0m
+[31m #6 0x55a8df4c5972 <unknown>[0m
+[31m #7 0x55a8df52aea1 <unknown>[0m
+[31m #8 0x55a8df5184e3 <unknown>[0m
+[31m #9 0x55a8df4edd1a <unknown>[0m
+[31m #10 0x55a8df4eee75 <unknown>[0m
+[31m #11 0x55a8df792efd <unknown>[0m
+[31m #12 0x55a8df7ac19b <unknown>[0m
+[31m #13 0x55a8df794c65 <unknown>[0m
+[31m #14 0x55a8df7acec8 <unknown>[0m
+[31m #15 0x55a8df788360 <unknown>[0m
+[31m #16 0x55a8df7c8a68 <unknown>[0m
+[31m #17 0x55a8df7c8be8 <unknown>[0m
+[31m #18 0x55a8df7e27fd <unknown>[0m
+[31m #19 0x7f42a916d609 <unknown>[0m
+[31m ./features/support/hooks.rb:2:in `Before'[0m
+    [36mDado que quero fazer uma busca[90m    # features/step_definitions/steps_busca_auto.rb:3[0m[0m
+    [33mQuando clico na barra de pesquisa[90m # features/fixtures/Busca/busca_auto.feature:21[0m[0m
+    [33mE digito minha busca[90m              # features/fixtures/Busca/busca_auto.feature:22[0m[0m
+    [33mEntão verei os resultados[90m         # features/fixtures/Busca/busca_auto.feature:23[0m[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4b35a9 <unknown>[0m
+[31m      #4 0x55a8df4b5302 <unknown>[0m
+[31m      #5 0x55a8df4ad6f6 <unknown>[0m
+[31m      #6 0x55a8df4c5972 <unknown>[0m
+[31m      #7 0x55a8df52aea1 <unknown>[0m
+[31m      #8 0x55a8df5184e3 <unknown>[0m
+[31m      #9 0x55a8df4edd1a <unknown>[0m
+[31m      #10 0x55a8df4eee75 <unknown>[0m
+[31m      #11 0x55a8df792efd <unknown>[0m
+[31m      #12 0x55a8df7ac19b <unknown>[0m
+[31m      #13 0x55a8df794c65 <unknown>[0m
+[31m      #14 0x55a8df7acec8 <unknown>[0m
+[31m      #15 0x55a8df788360 <unknown>[0m
+[31m      #16 0x55a8df7c8a68 <unknown>[0m
+[31m      #17 0x55a8df7c8be8 <unknown>[0m
+[31m      #18 0x55a8df7e27fd <unknown>[0m
+[31m      #19 0x7f42a916d609 <unknown>[0m
+[31m      ./features/support/hooks.rb:10:in `After'[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4a435d <unknown>[0m
+[31m      #4 0x55a8df520d77 <unknown>[0m
+[31m      #5 0x55a8df5185b8 <unknown>[0m
+[31m      #6 0x55a8df4edd1a <unknown>[0m
+[31m      #7 0x55a8df4eee75 <unknown>[0m
+[31m      #8 0x55a8df792efd <unknown>[0m
+[31m      #9 0x55a8df7ac19b <unknown>[0m
+[31m      #10 0x55a8df794c65 <unknown>[0m
+[31m      #11 0x55a8df7acec8 <unknown>[0m
+[31m      #12 0x55a8df788360 <unknown>[0m
+[31m      #13 0x55a8df7c8a68 <unknown>[0m
+[31m      #14 0x55a8df7c8be8 <unknown>[0m
+[31m      #15 0x55a8df7e27fd <unknown>[0m
+[31m      #16 0x7f42a916d609 <unknown>[0m
+
+  [36m@buscaInvalidaLogado[0m
+  Cenário: Busca Invalida Logado[90m      # features/fixtures/Busca/busca_auto.feature:26[0m
+[31m chrome not reachable[0m
+[31m   (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m #0 0x55a8df764ad3 <unknown>[0m
+[31m #1 0x55a8df4c43ff <unknown>[0m
+[31m #2 0x55a8df4b2b94 <unknown>[0m
+[31m #3 0x55a8df4b35a9 <unknown>[0m
+[31m #4 0x55a8df4b5302 <unknown>[0m
+[31m #5 0x55a8df4ad6f6 <unknown>[0m
+[31m #6 0x55a8df4c5972 <unknown>[0m
+[31m #7 0x55a8df52aea1 <unknown>[0m
+[31m #8 0x55a8df5184e3 <unknown>[0m
+[31m #9 0x55a8df4edd1a <unknown>[0m
+[31m #10 0x55a8df4eee75 <unknown>[0m
+[31m #11 0x55a8df792efd <unknown>[0m
+[31m #12 0x55a8df7ac19b <unknown>[0m
+[31m #13 0x55a8df794c65 <unknown>[0m
+[31m #14 0x55a8df7acec8 <unknown>[0m
+[31m #15 0x55a8df788360 <unknown>[0m
+[31m #16 0x55a8df7c8a68 <unknown>[0m
+[31m #17 0x55a8df7c8be8 <unknown>[0m
+[31m #18 0x55a8df7e27fd <unknown>[0m
+[31m #19 0x7f42a916d609 <unknown>[0m
+[31m ./features/support/hooks.rb:2:in `Before'[0m
+    [36mDado que quero fazer uma busca[90m    # features/step_definitions/steps_busca_auto.rb:3[0m[0m
+    [33mQuando clico na barra de pesquisa[90m # features/fixtures/Busca/busca_auto.feature:28[0m[0m
+    [33mE digito minha busca[90m              # features/fixtures/Busca/busca_auto.feature:29[0m[0m
+    [33mEntão verei os resultados[90m         # features/fixtures/Busca/busca_auto.feature:30[0m[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4b35a9 <unknown>[0m
+[31m      #4 0x55a8df4b5302 <unknown>[0m
+[31m      #5 0x55a8df4ad6f6 <unknown>[0m
+[31m      #6 0x55a8df4c5972 <unknown>[0m
+[31m      #7 0x55a8df52aea1 <unknown>[0m
+[31m      #8 0x55a8df5184e3 <unknown>[0m
+[31m      #9 0x55a8df4edd1a <unknown>[0m
+[31m      #10 0x55a8df4eee75 <unknown>[0m
+[31m      #11 0x55a8df792efd <unknown>[0m
+[31m      #12 0x55a8df7ac19b <unknown>[0m
+[31m      #13 0x55a8df794c65 <unknown>[0m
+[31m      #14 0x55a8df7acec8 <unknown>[0m
+[31m      #15 0x55a8df788360 <unknown>[0m
+[31m      #16 0x55a8df7c8a68 <unknown>[0m
+[31m      #17 0x55a8df7c8be8 <unknown>[0m
+[31m      #18 0x55a8df7e27fd <unknown>[0m
+[31m      #19 0x7f42a916d609 <unknown>[0m
+[31m      ./features/support/hooks.rb:10:in `After'[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4a435d <unknown>[0m
+[31m      #4 0x55a8df520d77 <unknown>[0m
+[31m      #5 0x55a8df5185b8 <unknown>[0m
+[31m      #6 0x55a8df4edd1a <unknown>[0m
+[31m      #7 0x55a8df4eee75 <unknown>[0m
+[31m      #8 0x55a8df792efd <unknown>[0m
+[31m      #9 0x55a8df7ac19b <unknown>[0m
+[31m      #10 0x55a8df794c65 <unknown>[0m
+[31m      #11 0x55a8df7acec8 <unknown>[0m
+[31m      #12 0x55a8df788360 <unknown>[0m
+[31m      #13 0x55a8df7c8a68 <unknown>[0m
+[31m      #14 0x55a8df7c8be8 <unknown>[0m
+[31m      #15 0x55a8df7e27fd <unknown>[0m
+[31m      #16 0x7f42a916d609 <unknown>[0m
+
+# language: pt
+[36m@cadastro[0m
+Funcionalidade: Realizar Cadastro
+
+  [36m@cadVazios[0m
+  Esquema do Cenário: Campos Obrigatórios[90m                                         # features/fixtures/Cadastro/cadastro_auto.feature:7[0m
+    [36mDado que estou na 'pagina inicial'[90m                                            # features/fixtures/Cadastro/cadastro_auto.feature:8[0m[0m
+    [36mQuando quero realizar um cadastro[90m                                             # features/fixtures/Cadastro/cadastro_auto.feature:9[0m[0m
+    [36mE preencho '<nome>', '<sobrenome>', '<email>', '<senha>', '<confirmar_senha>'[90m # features/fixtures/Cadastro/cadastro_auto.feature:10[0m[0m
+    [36mEntão devo ler '<mensagem>'[90m                                                   # features/fixtures/Cadastro/cadastro_auto.feature:11[0m[0m
+
+    Exemplos: Dados Ausentes
+      | [36m[1mnome    [0m[0m[36m[0m |[0m [36m[1msobrenome[0m[0m[36m[0m |[0m [36m[1memail                       [0m[0m[36m[0m |[0m [36m[1msenha   [0m[0m[36m[0m |[0m [36m[1mconfirmar_senha[0m[0m[36m[0m |[0m [36m[1mmensagem                 [0m[0m[36m[0m |[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4b35a9 <unknown>[0m
+[31m      #4 0x55a8df4b5302 <unknown>[0m
+[31m      #5 0x55a8df4ad6f6 <unknown>[0m
+[31m      #6 0x55a8df4c5972 <unknown>[0m
+[31m      #7 0x55a8df52aea1 <unknown>[0m
+[31m      #8 0x55a8df5184e3 <unknown>[0m
+[31m      #9 0x55a8df4edd1a <unknown>[0m
+[31m      #10 0x55a8df4eee75 <unknown>[0m
+[31m      #11 0x55a8df792efd <unknown>[0m
+[31m      #12 0x55a8df7ac19b <unknown>[0m
+[31m      #13 0x55a8df794c65 <unknown>[0m
+[31m      #14 0x55a8df7acec8 <unknown>[0m
+[31m      #15 0x55a8df788360 <unknown>[0m
+[31m      #16 0x55a8df7c8a68 <unknown>[0m
+[31m      #17 0x55a8df7c8be8 <unknown>[0m
+[31m      #18 0x55a8df7e27fd <unknown>[0m
+[31m      #19 0x7f42a916d609 <unknown>[0m
+[31m      ./features/support/hooks.rb:2:in `Before'[0m
+      | [36m        [0m[0m |[0m [36m         [0m[0m |[0m [36m                            [0m[0m |[0m [36m        [0m[0m |[0m [36m               [0m[0m |[0m [36mEsse campo é obrigatório.[0m[0m |[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4b35a9 <unknown>[0m
+[31m      #4 0x55a8df4b5302 <unknown>[0m
+[31m      #5 0x55a8df4ad6f6 <unknown>[0m
+[31m      #6 0x55a8df4c5972 <unknown>[0m
+[31m      #7 0x55a8df52aea1 <unknown>[0m
+[31m      #8 0x55a8df5184e3 <unknown>[0m
+[31m      #9 0x55a8df4edd1a <unknown>[0m
+[31m      #10 0x55a8df4eee75 <unknown>[0m
+[31m      #11 0x55a8df792efd <unknown>[0m
+[31m      #12 0x55a8df7ac19b <unknown>[0m
+[31m      #13 0x55a8df794c65 <unknown>[0m
+[31m      #14 0x55a8df7acec8 <unknown>[0m
+[31m      #15 0x55a8df788360 <unknown>[0m
+[31m      #16 0x55a8df7c8a68 <unknown>[0m
+[31m      #17 0x55a8df7c8be8 <unknown>[0m
+[31m      #18 0x55a8df7e27fd <unknown>[0m
+[31m      #19 0x7f42a916d609 <unknown>[0m
+[31m      ./features/support/hooks.rb:10:in `After'[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4a435d <unknown>[0m
+[31m      #4 0x55a8df520d77 <unknown>[0m
+[31m      #5 0x55a8df5185b8 <unknown>[0m
+[31m      #6 0x55a8df4edd1a <unknown>[0m
+[31m      #7 0x55a8df4eee75 <unknown>[0m
+[31m      #8 0x55a8df792efd <unknown>[0m
+[31m      #9 0x55a8df7ac19b <unknown>[0m
+[31m      #10 0x55a8df794c65 <unknown>[0m
+[31m      #11 0x55a8df7acec8 <unknown>[0m
+[31m      #12 0x55a8df788360 <unknown>[0m
+[31m      #13 0x55a8df7c8a68 <unknown>[0m
+[31m      #14 0x55a8df7c8be8 <unknown>[0m
+[31m      #15 0x55a8df7e27fd <unknown>[0m
+[31m      #16 0x7f42a916d609 <unknown>[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4b35a9 <unknown>[0m
+[31m      #4 0x55a8df4b5302 <unknown>[0m
+[31m      #5 0x55a8df4ad6f6 <unknown>[0m
+[31m      #6 0x55a8df4c5972 <unknown>[0m
+[31m      #7 0x55a8df52aea1 <unknown>[0m
+[31m      #8 0x55a8df5184e3 <unknown>[0m
+[31m      #9 0x55a8df4edd1a <unknown>[0m
+[31m      #10 0x55a8df4eee75 <unknown>[0m
+[31m      #11 0x55a8df792efd <unknown>[0m
+[31m      #12 0x55a8df7ac19b <unknown>[0m
+[31m      #13 0x55a8df794c65 <unknown>[0m
+[31m      #14 0x55a8df7acec8 <unknown>[0m
+[31m      #15 0x55a8df788360 <unknown>[0m
+[31m      #16 0x55a8df7c8a68 <unknown>[0m
+[31m      #17 0x55a8df7c8be8 <unknown>[0m
+[31m      #18 0x55a8df7e27fd <unknown>[0m
+[31m      #19 0x7f42a916d609 <unknown>[0m
+[31m      ./features/support/hooks.rb:2:in `Before'[0m
+      | [36m        [0m[0m |[0m [36mRibeiro  [0m[0m |[0m [36mhenrique.reis@webjump.com.br[0m[0m |[0m [36mpa$$Wrd![0m[0m |[0m [36mpa$$Wrd!       [0m[0m |[0m [36mEsse campo é obrigatório.[0m[0m |[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4b35a9 <unknown>[0m
+[31m      #4 0x55a8df4b5302 <unknown>[0m
+[31m      #5 0x55a8df4ad6f6 <unknown>[0m
+[31m      #6 0x55a8df4c5972 <unknown>[0m
+[31m      #7 0x55a8df52aea1 <unknown>[0m
+[31m      #8 0x55a8df5184e3 <unknown>[0m
+[31m      #9 0x55a8df4edd1a <unknown>[0m
+[31m      #10 0x55a8df4eee75 <unknown>[0m
+[31m      #11 0x55a8df792efd <unknown>[0m
+[31m      #12 0x55a8df7ac19b <unknown>[0m
+[31m      #13 0x55a8df794c65 <unknown>[0m
+[31m      #14 0x55a8df7acec8 <unknown>[0m
+[31m      #15 0x55a8df788360 <unknown>[0m
+[31m      #16 0x55a8df7c8a68 <unknown>[0m
+[31m      #17 0x55a8df7c8be8 <unknown>[0m
+[31m      #18 0x55a8df7e27fd <unknown>[0m
+[31m      #19 0x7f42a916d609 <unknown>[0m
+[31m      ./features/support/hooks.rb:10:in `After'[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4a435d <unknown>[0m
+[31m      #4 0x55a8df520d77 <unknown>[0m
+[31m      #5 0x55a8df5185b8 <unknown>[0m
+[31m      #6 0x55a8df4edd1a <unknown>[0m
+[31m      #7 0x55a8df4eee75 <unknown>[0m
+[31m      #8 0x55a8df792efd <unknown>[0m
+[31m      #9 0x55a8df7ac19b <unknown>[0m
+[31m      #10 0x55a8df794c65 <unknown>[0m
+[31m      #11 0x55a8df7acec8 <unknown>[0m
+[31m      #12 0x55a8df788360 <unknown>[0m
+[31m      #13 0x55a8df7c8a68 <unknown>[0m
+[31m      #14 0x55a8df7c8be8 <unknown>[0m
+[31m      #15 0x55a8df7e27fd <unknown>[0m
+[31m      #16 0x7f42a916d609 <unknown>[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4b35a9 <unknown>[0m
+[31m      #4 0x55a8df4b5302 <unknown>[0m
+[31m      #5 0x55a8df4ad6f6 <unknown>[0m
+[31m      #6 0x55a8df4c5972 <unknown>[0m
+[31m      #7 0x55a8df52aea1 <unknown>[0m
+[31m      #8 0x55a8df5184e3 <unknown>[0m
+[31m      #9 0x55a8df4edd1a <unknown>[0m
+[31m      #10 0x55a8df4eee75 <unknown>[0m
+[31m      #11 0x55a8df792efd <unknown>[0m
+[31m      #12 0x55a8df7ac19b <unknown>[0m
+[31m      #13 0x55a8df794c65 <unknown>[0m
+[31m      #14 0x55a8df7acec8 <unknown>[0m
+[31m      #15 0x55a8df788360 <unknown>[0m
+[31m      #16 0x55a8df7c8a68 <unknown>[0m
+[31m      #17 0x55a8df7c8be8 <unknown>[0m
+[31m      #18 0x55a8df7e27fd <unknown>[0m
+[31m      #19 0x7f42a916d609 <unknown>[0m
+[31m      ./features/support/hooks.rb:2:in `Before'[0m
+      | [36mHenrique[0m[0m |[0m [36m         [0m[0m |[0m [36mhenrique.reis@webjump.com.br[0m[0m |[0m [36mpa$$Wrd![0m[0m |[0m [36mpa$$Wrd!       [0m[0m |[0m [36mEsse campo é obrigatório.[0m[0m |[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4b35a9 <unknown>[0m
+[31m      #4 0x55a8df4b5302 <unknown>[0m
+[31m      #5 0x55a8df4ad6f6 <unknown>[0m
+[31m      #6 0x55a8df4c5972 <unknown>[0m
+[31m      #7 0x55a8df52aea1 <unknown>[0m
+[31m      #8 0x55a8df5184e3 <unknown>[0m
+[31m      #9 0x55a8df4edd1a <unknown>[0m
+[31m      #10 0x55a8df4eee75 <unknown>[0m
+[31m      #11 0x55a8df792efd <unknown>[0m
+[31m      #12 0x55a8df7ac19b <unknown>[0m
+[31m      #13 0x55a8df794c65 <unknown>[0m
+[31m      #14 0x55a8df7acec8 <unknown>[0m
+[31m      #15 0x55a8df788360 <unknown>[0m
+[31m      #16 0x55a8df7c8a68 <unknown>[0m
+[31m      #17 0x55a8df7c8be8 <unknown>[0m
+[31m      #18 0x55a8df7e27fd <unknown>[0m
+[31m      #19 0x7f42a916d609 <unknown>[0m
+[31m      ./features/support/hooks.rb:10:in `After'[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4a435d <unknown>[0m
+[31m      #4 0x55a8df520d77 <unknown>[0m
+[31m      #5 0x55a8df5185b8 <unknown>[0m
+[31m      #6 0x55a8df4edd1a <unknown>[0m
+[31m      #7 0x55a8df4eee75 <unknown>[0m
+[31m      #8 0x55a8df792efd <unknown>[0m
+[31m      #9 0x55a8df7ac19b <unknown>[0m
+[31m      #10 0x55a8df794c65 <unknown>[0m
+[31m      #11 0x55a8df7acec8 <unknown>[0m
+[31m      #12 0x55a8df788360 <unknown>[0m
+[31m      #13 0x55a8df7c8a68 <unknown>[0m
+[31m      #14 0x55a8df7c8be8 <unknown>[0m
+[31m      #15 0x55a8df7e27fd <unknown>[0m
+[31m      #16 0x7f42a916d609 <unknown>[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4b35a9 <unknown>[0m
+[31m      #4 0x55a8df4b5302 <unknown>[0m
+[31m      #5 0x55a8df4ad6f6 <unknown>[0m
+[31m      #6 0x55a8df4c5972 <unknown>[0m
+[31m      #7 0x55a8df52aea1 <unknown>[0m
+[31m      #8 0x55a8df5184e3 <unknown>[0m
+[31m      #9 0x55a8df4edd1a <unknown>[0m
+[31m      #10 0x55a8df4eee75 <unknown>[0m
+[31m      #11 0x55a8df792efd <unknown>[0m
+[31m      #12 0x55a8df7ac19b <unknown>[0m
+[31m      #13 0x55a8df794c65 <unknown>[0m
+[31m      #14 0x55a8df7acec8 <unknown>[0m
+[31m      #15 0x55a8df788360 <unknown>[0m
+[31m      #16 0x55a8df7c8a68 <unknown>[0m
+[31m      #17 0x55a8df7c8be8 <unknown>[0m
+[31m      #18 0x55a8df7e27fd <unknown>[0m
+[31m      #19 0x7f42a916d609 <unknown>[0m
+[31m      ./features/support/hooks.rb:2:in `Before'[0m
+      | [36mHenrique[0m[0m |[0m [36mRibeiro  [0m[0m |[0m [36m                            [0m[0m |[0m [36mpa$$Wrd![0m[0m |[0m [36mpa$$Wrd!       [0m[0m |[0m [36mEsse campo é obrigatório.[0m[0m |[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4b35a9 <unknown>[0m
+[31m      #4 0x55a8df4b5302 <unknown>[0m
+[31m      #5 0x55a8df4ad6f6 <unknown>[0m
+[31m      #6 0x55a8df4c5972 <unknown>[0m
+[31m      #7 0x55a8df52aea1 <unknown>[0m
+[31m      #8 0x55a8df5184e3 <unknown>[0m
+[31m      #9 0x55a8df4edd1a <unknown>[0m
+[31m      #10 0x55a8df4eee75 <unknown>[0m
+[31m      #11 0x55a8df792efd <unknown>[0m
+[31m      #12 0x55a8df7ac19b <unknown>[0m
+[31m      #13 0x55a8df794c65 <unknown>[0m
+[31m      #14 0x55a8df7acec8 <unknown>[0m
+[31m      #15 0x55a8df788360 <unknown>[0m
+[31m      #16 0x55a8df7c8a68 <unknown>[0m
+[31m      #17 0x55a8df7c8be8 <unknown>[0m
+[31m      #18 0x55a8df7e27fd <unknown>[0m
+[31m      #19 0x7f42a916d609 <unknown>[0m
+[31m      ./features/support/hooks.rb:10:in `After'[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4a435d <unknown>[0m
+[31m      #4 0x55a8df520d77 <unknown>[0m
+[31m      #5 0x55a8df5185b8 <unknown>[0m
+[31m      #6 0x55a8df4edd1a <unknown>[0m
+[31m      #7 0x55a8df4eee75 <unknown>[0m
+[31m      #8 0x55a8df792efd <unknown>[0m
+[31m      #9 0x55a8df7ac19b <unknown>[0m
+[31m      #10 0x55a8df794c65 <unknown>[0m
+[31m      #11 0x55a8df7acec8 <unknown>[0m
+[31m      #12 0x55a8df788360 <unknown>[0m
+[31m      #13 0x55a8df7c8a68 <unknown>[0m
+[31m      #14 0x55a8df7c8be8 <unknown>[0m
+[31m      #15 0x55a8df7e27fd <unknown>[0m
+[31m      #16 0x7f42a916d609 <unknown>[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4b35a9 <unknown>[0m
+[31m      #4 0x55a8df4b5302 <unknown>[0m
+[31m      #5 0x55a8df4ad6f6 <unknown>[0m
+[31m      #6 0x55a8df4c5972 <unknown>[0m
+[31m      #7 0x55a8df52aea1 <unknown>[0m
+[31m      #8 0x55a8df5184e3 <unknown>[0m
+[31m      #9 0x55a8df4edd1a <unknown>[0m
+[31m      #10 0x55a8df4eee75 <unknown>[0m
+[31m      #11 0x55a8df792efd <unknown>[0m
+[31m      #12 0x55a8df7ac19b <unknown>[0m
+[31m      #13 0x55a8df794c65 <unknown>[0m
+[31m      #14 0x55a8df7acec8 <unknown>[0m
+[31m      #15 0x55a8df788360 <unknown>[0m
+[31m      #16 0x55a8df7c8a68 <unknown>[0m
+[31m      #17 0x55a8df7c8be8 <unknown>[0m
+[31m      #18 0x55a8df7e27fd <unknown>[0m
+[31m      #19 0x7f42a916d609 <unknown>[0m
+[31m      ./features/support/hooks.rb:2:in `Before'[0m
+      | [36mHenrique[0m[0m |[0m [36mRibeiro  [0m[0m |[0m [36mhenrique.reis@webjump.com.br[0m[0m |[0m [36m        [0m[0m |[0m [36mpa$$Wrd!       [0m[0m |[0m [36mEsse campo é obrigatório.[0m[0m |[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4b35a9 <unknown>[0m
+[31m      #4 0x55a8df4b5302 <unknown>[0m
+[31m      #5 0x55a8df4ad6f6 <unknown>[0m
+[31m      #6 0x55a8df4c5972 <unknown>[0m
+[31m      #7 0x55a8df52aea1 <unknown>[0m
+[31m      #8 0x55a8df5184e3 <unknown>[0m
+[31m      #9 0x55a8df4edd1a <unknown>[0m
+[31m      #10 0x55a8df4eee75 <unknown>[0m
+[31m      #11 0x55a8df792efd <unknown>[0m
+[31m      #12 0x55a8df7ac19b <unknown>[0m
+[31m      #13 0x55a8df794c65 <unknown>[0m
+[31m      #14 0x55a8df7acec8 <unknown>[0m
+[31m      #15 0x55a8df788360 <unknown>[0m
+[31m      #16 0x55a8df7c8a68 <unknown>[0m
+[31m      #17 0x55a8df7c8be8 <unknown>[0m
+[31m      #18 0x55a8df7e27fd <unknown>[0m
+[31m      #19 0x7f42a916d609 <unknown>[0m
+[31m      ./features/support/hooks.rb:10:in `After'[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4a435d <unknown>[0m
+[31m      #4 0x55a8df520d77 <unknown>[0m
+[31m      #5 0x55a8df5185b8 <unknown>[0m
+[31m      #6 0x55a8df4edd1a <unknown>[0m
+[31m      #7 0x55a8df4eee75 <unknown>[0m
+[31m      #8 0x55a8df792efd <unknown>[0m
+[31m      #9 0x55a8df7ac19b <unknown>[0m
+[31m      #10 0x55a8df794c65 <unknown>[0m
+[31m      #11 0x55a8df7acec8 <unknown>[0m
+[31m      #12 0x55a8df788360 <unknown>[0m
+[31m      #13 0x55a8df7c8a68 <unknown>[0m
+[31m      #14 0x55a8df7c8be8 <unknown>[0m
+[31m      #15 0x55a8df7e27fd <unknown>[0m
+[31m      #16 0x7f42a916d609 <unknown>[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4b35a9 <unknown>[0m
+[31m      #4 0x55a8df4b5302 <unknown>[0m
+[31m      #5 0x55a8df4ad6f6 <unknown>[0m
+[31m      #6 0x55a8df4c5972 <unknown>[0m
+[31m      #7 0x55a8df52aea1 <unknown>[0m
+[31m      #8 0x55a8df5184e3 <unknown>[0m
+[31m      #9 0x55a8df4edd1a <unknown>[0m
+[31m      #10 0x55a8df4eee75 <unknown>[0m
+[31m      #11 0x55a8df792efd <unknown>[0m
+[31m      #12 0x55a8df7ac19b <unknown>[0m
+[31m      #13 0x55a8df794c65 <unknown>[0m
+[31m      #14 0x55a8df7acec8 <unknown>[0m
+[31m      #15 0x55a8df788360 <unknown>[0m
+[31m      #16 0x55a8df7c8a68 <unknown>[0m
+[31m      #17 0x55a8df7c8be8 <unknown>[0m
+[31m      #18 0x55a8df7e27fd <unknown>[0m
+[31m      #19 0x7f42a916d609 <unknown>[0m
+[31m      ./features/support/hooks.rb:2:in `Before'[0m
+      | [36mHenrique[0m[0m |[0m [36mRibeiro  [0m[0m |[0m [36mhenrique.reis@webjump.com.br[0m[0m |[0m [36mpa$$Wrd![0m[0m |[0m [36m               [0m[0m |[0m [36mEsse campo é obrigatório.[0m[0m |[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4b35a9 <unknown>[0m
+[31m      #4 0x55a8df4b5302 <unknown>[0m
+[31m      #5 0x55a8df4ad6f6 <unknown>[0m
+[31m      #6 0x55a8df4c5972 <unknown>[0m
+[31m      #7 0x55a8df52aea1 <unknown>[0m
+[31m      #8 0x55a8df5184e3 <unknown>[0m
+[31m      #9 0x55a8df4edd1a <unknown>[0m
+[31m      #10 0x55a8df4eee75 <unknown>[0m
+[31m      #11 0x55a8df792efd <unknown>[0m
+[31m      #12 0x55a8df7ac19b <unknown>[0m
+[31m      #13 0x55a8df794c65 <unknown>[0m
+[31m      #14 0x55a8df7acec8 <unknown>[0m
+[31m      #15 0x55a8df788360 <unknown>[0m
+[31m      #16 0x55a8df7c8a68 <unknown>[0m
+[31m      #17 0x55a8df7c8be8 <unknown>[0m
+[31m      #18 0x55a8df7e27fd <unknown>[0m
+[31m      #19 0x7f42a916d609 <unknown>[0m
+[31m      ./features/support/hooks.rb:10:in `After'[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4a435d <unknown>[0m
+[31m      #4 0x55a8df520d77 <unknown>[0m
+[31m      #5 0x55a8df5185b8 <unknown>[0m
+[31m      #6 0x55a8df4edd1a <unknown>[0m
+[31m      #7 0x55a8df4eee75 <unknown>[0m
+[31m      #8 0x55a8df792efd <unknown>[0m
+[31m      #9 0x55a8df7ac19b <unknown>[0m
+[31m      #10 0x55a8df794c65 <unknown>[0m
+[31m      #11 0x55a8df7acec8 <unknown>[0m
+[31m      #12 0x55a8df788360 <unknown>[0m
+[31m      #13 0x55a8df7c8a68 <unknown>[0m
+[31m      #14 0x55a8df7c8be8 <unknown>[0m
+[31m      #15 0x55a8df7e27fd <unknown>[0m
+[31m      #16 0x7f42a916d609 <unknown>[0m
+
+  [36m@cadInvalido[0m
+  Esquema do Cenário: Cadastro Inválido[90m                                           # features/fixtures/Cadastro/cadastro_auto.feature:23[0m
+    [36mDado que estou na 'pagina inicial'[90m                                            # features/fixtures/Cadastro/cadastro_auto.feature:24[0m[0m
+    [36mQuando quero realizar um cadastro[90m                                             # features/fixtures/Cadastro/cadastro_auto.feature:25[0m[0m
+    [36mE preencho '<nome>', '<sobrenome>', '<email>', '<senha>', '<confirmar_senha>'[90m # features/fixtures/Cadastro/cadastro_auto.feature:26[0m[0m
+    [36mEntão devo ler '<mensagem>'[90m                                                   # features/fixtures/Cadastro/cadastro_auto.feature:27[0m[0m
+
+    Exemplos: Dados Inválidos
+      | [36m[1mnome    [0m[0m[36m[0m |[0m [36m[1msobrenome[0m[0m[36m[0m |[0m [36m[1memail                       [0m[0m[36m[0m |[0m [36m[1msenha   [0m[0m[36m[0m |[0m [36m[1mconfirmar_senha[0m[0m[36m[0m |[0m [36m[1mmensagem                                                     [0m[0m[36m[0m |[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4b35a9 <unknown>[0m
+[31m      #4 0x55a8df4b5302 <unknown>[0m
+[31m      #5 0x55a8df4ad6f6 <unknown>[0m
+[31m      #6 0x55a8df4c5972 <unknown>[0m
+[31m      #7 0x55a8df52aea1 <unknown>[0m
+[31m      #8 0x55a8df5184e3 <unknown>[0m
+[31m      #9 0x55a8df4edd1a <unknown>[0m
+[31m      #10 0x55a8df4eee75 <unknown>[0m
+[31m      #11 0x55a8df792efd <unknown>[0m
+[31m      #12 0x55a8df7ac19b <unknown>[0m
+[31m      #13 0x55a8df794c65 <unknown>[0m
+[31m      #14 0x55a8df7acec8 <unknown>[0m
+[31m      #15 0x55a8df788360 <unknown>[0m
+[31m      #16 0x55a8df7c8a68 <unknown>[0m
+[31m      #17 0x55a8df7c8be8 <unknown>[0m
+[31m      #18 0x55a8df7e27fd <unknown>[0m
+[31m      #19 0x7f42a916d609 <unknown>[0m
+[31m      ./features/support/hooks.rb:2:in `Before'[0m
+      | [36mHenrique[0m[0m |[0m [36mRibeiro  [0m[0m |[0m [36mribeiro                     [0m[0m |[0m [36mpa$$wrdA[0m[0m |[0m [36mpa$$wrdA       [0m[0m |[0m [36mPor favor insira um endereço de email válido                 [0m[0m |[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4b35a9 <unknown>[0m
+[31m      #4 0x55a8df4b5302 <unknown>[0m
+[31m      #5 0x55a8df4ad6f6 <unknown>[0m
+[31m      #6 0x55a8df4c5972 <unknown>[0m
+[31m      #7 0x55a8df52aea1 <unknown>[0m
+[31m      #8 0x55a8df5184e3 <unknown>[0m
+[31m      #9 0x55a8df4edd1a <unknown>[0m
+[31m      #10 0x55a8df4eee75 <unknown>[0m
+[31m      #11 0x55a8df792efd <unknown>[0m
+[31m      #12 0x55a8df7ac19b <unknown>[0m
+[31m      #13 0x55a8df794c65 <unknown>[0m
+[31m      #14 0x55a8df7acec8 <unknown>[0m
+[31m      #15 0x55a8df788360 <unknown>[0m
+[31m      #16 0x55a8df7c8a68 <unknown>[0m
+[31m      #17 0x55a8df7c8be8 <unknown>[0m
+[31m      #18 0x55a8df7e27fd <unknown>[0m
+[31m      #19 0x7f42a916d609 <unknown>[0m
+[31m      ./features/support/hooks.rb:10:in `After'[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4a435d <unknown>[0m
+[31m      #4 0x55a8df520d77 <unknown>[0m
+[31m      #5 0x55a8df5185b8 <unknown>[0m
+[31m      #6 0x55a8df4edd1a <unknown>[0m
+[31m      #7 0x55a8df4eee75 <unknown>[0m
+[31m      #8 0x55a8df792efd <unknown>[0m
+[31m      #9 0x55a8df7ac19b <unknown>[0m
+[31m      #10 0x55a8df794c65 <unknown>[0m
+[31m      #11 0x55a8df7acec8 <unknown>[0m
+[31m      #12 0x55a8df788360 <unknown>[0m
+[31m      #13 0x55a8df7c8a68 <unknown>[0m
+[31m      #14 0x55a8df7c8be8 <unknown>[0m
+[31m      #15 0x55a8df7e27fd <unknown>[0m
+[31m      #16 0x7f42a916d609 <unknown>[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4b35a9 <unknown>[0m
+[31m      #4 0x55a8df4b5302 <unknown>[0m
+[31m      #5 0x55a8df4ad6f6 <unknown>[0m
+[31m      #6 0x55a8df4c5972 <unknown>[0m
+[31m      #7 0x55a8df52aea1 <unknown>[0m
+[31m      #8 0x55a8df5184e3 <unknown>[0m
+[31m      #9 0x55a8df4edd1a <unknown>[0m
+[31m      #10 0x55a8df4eee75 <unknown>[0m
+[31m      #11 0x55a8df792efd <unknown>[0m
+[31m      #12 0x55a8df7ac19b <unknown>[0m
+[31m      #13 0x55a8df794c65 <unknown>[0m
+[31m      #14 0x55a8df7acec8 <unknown>[0m
+[31m      #15 0x55a8df788360 <unknown>[0m
+[31m      #16 0x55a8df7c8a68 <unknown>[0m
+[31m      #17 0x55a8df7c8be8 <unknown>[0m
+[31m      #18 0x55a8df7e27fd <unknown>[0m
+[31m      #19 0x7f42a916d609 <unknown>[0m
+[31m      ./features/support/hooks.rb:2:in `Before'[0m
+      | [36mHenrique[0m[0m |[0m [36mRibeiro  [0m[0m |[0m [36mhenrique.reis@webjump.com.br[0m[0m |[0m [36mpass    [0m[0m |[0m [36mpass           [0m[0m |[0m [36mComprimento mínimo deste campo deve ser igual ou maior       [0m[0m |[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4b35a9 <unknown>[0m
+[31m      #4 0x55a8df4b5302 <unknown>[0m
+[31m      #5 0x55a8df4ad6f6 <unknown>[0m
+[31m      #6 0x55a8df4c5972 <unknown>[0m
+[31m      #7 0x55a8df52aea1 <unknown>[0m
+[31m      #8 0x55a8df5184e3 <unknown>[0m
+[31m      #9 0x55a8df4edd1a <unknown>[0m
+[31m      #10 0x55a8df4eee75 <unknown>[0m
+[31m      #11 0x55a8df792efd <unknown>[0m
+[31m      #12 0x55a8df7ac19b <unknown>[0m
+[31m      #13 0x55a8df794c65 <unknown>[0m
+[31m      #14 0x55a8df7acec8 <unknown>[0m
+[31m      #15 0x55a8df788360 <unknown>[0m
+[31m      #16 0x55a8df7c8a68 <unknown>[0m
+[31m      #17 0x55a8df7c8be8 <unknown>[0m
+[31m      #18 0x55a8df7e27fd <unknown>[0m
+[31m      #19 0x7f42a916d609 <unknown>[0m
+[31m      ./features/support/hooks.rb:10:in `After'[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4a435d <unknown>[0m
+[31m      #4 0x55a8df520d77 <unknown>[0m
+[31m      #5 0x55a8df5185b8 <unknown>[0m
+[31m      #6 0x55a8df4edd1a <unknown>[0m
+[31m      #7 0x55a8df4eee75 <unknown>[0m
+[31m      #8 0x55a8df792efd <unknown>[0m
+[31m      #9 0x55a8df7ac19b <unknown>[0m
+[31m      #10 0x55a8df794c65 <unknown>[0m
+[31m      #11 0x55a8df7acec8 <unknown>[0m
+[31m      #12 0x55a8df788360 <unknown>[0m
+[31m      #13 0x55a8df7c8a68 <unknown>[0m
+[31m      #14 0x55a8df7c8be8 <unknown>[0m
+[31m      #15 0x55a8df7e27fd <unknown>[0m
+[31m      #16 0x7f42a916d609 <unknown>[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4b35a9 <unknown>[0m
+[31m      #4 0x55a8df4b5302 <unknown>[0m
+[31m      #5 0x55a8df4ad6f6 <unknown>[0m
+[31m      #6 0x55a8df4c5972 <unknown>[0m
+[31m      #7 0x55a8df52aea1 <unknown>[0m
+[31m      #8 0x55a8df5184e3 <unknown>[0m
+[31m      #9 0x55a8df4edd1a <unknown>[0m
+[31m      #10 0x55a8df4eee75 <unknown>[0m
+[31m      #11 0x55a8df792efd <unknown>[0m
+[31m      #12 0x55a8df7ac19b <unknown>[0m
+[31m      #13 0x55a8df794c65 <unknown>[0m
+[31m      #14 0x55a8df7acec8 <unknown>[0m
+[31m      #15 0x55a8df788360 <unknown>[0m
+[31m      #16 0x55a8df7c8a68 <unknown>[0m
+[31m      #17 0x55a8df7c8be8 <unknown>[0m
+[31m      #18 0x55a8df7e27fd <unknown>[0m
+[31m      #19 0x7f42a916d609 <unknown>[0m
+[31m      ./features/support/hooks.rb:2:in `Before'[0m
+      | [36mHenrique[0m[0m |[0m [36mRibeiro  [0m[0m |[0m [36mhenrique.reis@webjump.com.br[0m[0m |[0m [36mpassword[0m[0m |[0m [36mpassword       [0m[0m |[0m [36mO mínimo de classes de caracteres diferentes na palavra-passe[0m[0m |[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4b35a9 <unknown>[0m
+[31m      #4 0x55a8df4b5302 <unknown>[0m
+[31m      #5 0x55a8df4ad6f6 <unknown>[0m
+[31m      #6 0x55a8df4c5972 <unknown>[0m
+[31m      #7 0x55a8df52aea1 <unknown>[0m
+[31m      #8 0x55a8df5184e3 <unknown>[0m
+[31m      #9 0x55a8df4edd1a <unknown>[0m
+[31m      #10 0x55a8df4eee75 <unknown>[0m
+[31m      #11 0x55a8df792efd <unknown>[0m
+[31m      #12 0x55a8df7ac19b <unknown>[0m
+[31m      #13 0x55a8df794c65 <unknown>[0m
+[31m      #14 0x55a8df7acec8 <unknown>[0m
+[31m      #15 0x55a8df788360 <unknown>[0m
+[31m      #16 0x55a8df7c8a68 <unknown>[0m
+[31m      #17 0x55a8df7c8be8 <unknown>[0m
+[31m      #18 0x55a8df7e27fd <unknown>[0m
+[31m      #19 0x7f42a916d609 <unknown>[0m
+[31m      ./features/support/hooks.rb:10:in `After'[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4a435d <unknown>[0m
+[31m      #4 0x55a8df520d77 <unknown>[0m
+[31m      #5 0x55a8df5185b8 <unknown>[0m
+[31m      #6 0x55a8df4edd1a <unknown>[0m
+[31m      #7 0x55a8df4eee75 <unknown>[0m
+[31m      #8 0x55a8df792efd <unknown>[0m
+[31m      #9 0x55a8df7ac19b <unknown>[0m
+[31m      #10 0x55a8df794c65 <unknown>[0m
+[31m      #11 0x55a8df7acec8 <unknown>[0m
+[31m      #12 0x55a8df788360 <unknown>[0m
+[31m      #13 0x55a8df7c8a68 <unknown>[0m
+[31m      #14 0x55a8df7c8be8 <unknown>[0m
+[31m      #15 0x55a8df7e27fd <unknown>[0m
+[31m      #16 0x7f42a916d609 <unknown>[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4b35a9 <unknown>[0m
+[31m      #4 0x55a8df4b5302 <unknown>[0m
+[31m      #5 0x55a8df4ad6f6 <unknown>[0m
+[31m      #6 0x55a8df4c5972 <unknown>[0m
+[31m      #7 0x55a8df52aea1 <unknown>[0m
+[31m      #8 0x55a8df5184e3 <unknown>[0m
+[31m      #9 0x55a8df4edd1a <unknown>[0m
+[31m      #10 0x55a8df4eee75 <unknown>[0m
+[31m      #11 0x55a8df792efd <unknown>[0m
+[31m      #12 0x55a8df7ac19b <unknown>[0m
+[31m      #13 0x55a8df794c65 <unknown>[0m
+[31m      #14 0x55a8df7acec8 <unknown>[0m
+[31m      #15 0x55a8df788360 <unknown>[0m
+[31m      #16 0x55a8df7c8a68 <unknown>[0m
+[31m      #17 0x55a8df7c8be8 <unknown>[0m
+[31m      #18 0x55a8df7e27fd <unknown>[0m
+[31m      #19 0x7f42a916d609 <unknown>[0m
+[31m      ./features/support/hooks.rb:2:in `Before'[0m
+      | [36mHenrique[0m[0m |[0m [36mRibeiro  [0m[0m |[0m [36mhenrique.reis@webjump.com.br[0m[0m |[0m [36mPa$$wrd![0m[0m |[0m [36mPa$$wrd!       [0m[0m |[0m [36mJá existe uma conta com este endereço de e-mail              [0m[0m |[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4b35a9 <unknown>[0m
+[31m      #4 0x55a8df4b5302 <unknown>[0m
+[31m      #5 0x55a8df4ad6f6 <unknown>[0m
+[31m      #6 0x55a8df4c5972 <unknown>[0m
+[31m      #7 0x55a8df52aea1 <unknown>[0m
+[31m      #8 0x55a8df5184e3 <unknown>[0m
+[31m      #9 0x55a8df4edd1a <unknown>[0m
+[31m      #10 0x55a8df4eee75 <unknown>[0m
+[31m      #11 0x55a8df792efd <unknown>[0m
+[31m      #12 0x55a8df7ac19b <unknown>[0m
+[31m      #13 0x55a8df794c65 <unknown>[0m
+[31m      #14 0x55a8df7acec8 <unknown>[0m
+[31m      #15 0x55a8df788360 <unknown>[0m
+[31m      #16 0x55a8df7c8a68 <unknown>[0m
+[31m      #17 0x55a8df7c8be8 <unknown>[0m
+[31m      #18 0x55a8df7e27fd <unknown>[0m
+[31m      #19 0x7f42a916d609 <unknown>[0m
+[31m      ./features/support/hooks.rb:10:in `After'[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4a435d <unknown>[0m
+[31m      #4 0x55a8df520d77 <unknown>[0m
+[31m      #5 0x55a8df5185b8 <unknown>[0m
+[31m      #6 0x55a8df4edd1a <unknown>[0m
+[31m      #7 0x55a8df4eee75 <unknown>[0m
+[31m      #8 0x55a8df792efd <unknown>[0m
+[31m      #9 0x55a8df7ac19b <unknown>[0m
+[31m      #10 0x55a8df794c65 <unknown>[0m
+[31m      #11 0x55a8df7acec8 <unknown>[0m
+[31m      #12 0x55a8df788360 <unknown>[0m
+[31m      #13 0x55a8df7c8a68 <unknown>[0m
+[31m      #14 0x55a8df7c8be8 <unknown>[0m
+[31m      #15 0x55a8df7e27fd <unknown>[0m
+[31m      #16 0x7f42a916d609 <unknown>[0m
+
+  [36m@cadSucesso[0m
+  Cenário: Cadastro Válido[90m                                   # features/fixtures/Cadastro/cadastro_auto.feature:38[0m
+[31m chrome not reachable[0m
+[31m   (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m #0 0x55a8df764ad3 <unknown>[0m
+[31m #1 0x55a8df4c43ff <unknown>[0m
+[31m #2 0x55a8df4b2b94 <unknown>[0m
+[31m #3 0x55a8df4b35a9 <unknown>[0m
+[31m #4 0x55a8df4b5302 <unknown>[0m
+[31m #5 0x55a8df4ad6f6 <unknown>[0m
+[31m #6 0x55a8df4c5972 <unknown>[0m
+[31m #7 0x55a8df52aea1 <unknown>[0m
+[31m #8 0x55a8df5184e3 <unknown>[0m
+[31m #9 0x55a8df4edd1a <unknown>[0m
+[31m #10 0x55a8df4eee75 <unknown>[0m
+[31m #11 0x55a8df792efd <unknown>[0m
+[31m #12 0x55a8df7ac19b <unknown>[0m
+[31m #13 0x55a8df794c65 <unknown>[0m
+[31m #14 0x55a8df7acec8 <unknown>[0m
+[31m #15 0x55a8df788360 <unknown>[0m
+[31m #16 0x55a8df7c8a68 <unknown>[0m
+[31m #17 0x55a8df7c8be8 <unknown>[0m
+[31m #18 0x55a8df7e27fd <unknown>[0m
+[31m #19 0x7f42a916d609 <unknown>[0m
+[31m ./features/support/hooks.rb:2:in `Before'[0m
+    [36mDado que estou na [36m[1m'pagina inicial'[0m[0m[36m[90m                       # features/step_definitions/steps_cadastro_auto.rb:3[0m[0m
+    [36mQuando quero realizar um cadastro[90m                        # features/step_definitions/steps_cadastro_auto.rb:7[0m[0m
+    [36mE preencho nome, sobrenome, email, senha, confirma_senha[90m # features/step_definitions/steps_cadastro_auto.rb:11[0m[0m
+    [36mEntão devo ler a mensagem [36m[1m'Obrigado por registrar'[0m[0m[36m[90m       # features/step_definitions/steps_cadastro_auto.rb:19[0m[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4b35a9 <unknown>[0m
+[31m      #4 0x55a8df4b5302 <unknown>[0m
+[31m      #5 0x55a8df4ad6f6 <unknown>[0m
+[31m      #6 0x55a8df4c5972 <unknown>[0m
+[31m      #7 0x55a8df52aea1 <unknown>[0m
+[31m      #8 0x55a8df5184e3 <unknown>[0m
+[31m      #9 0x55a8df4edd1a <unknown>[0m
+[31m      #10 0x55a8df4eee75 <unknown>[0m
+[31m      #11 0x55a8df792efd <unknown>[0m
+[31m      #12 0x55a8df7ac19b <unknown>[0m
+[31m      #13 0x55a8df794c65 <unknown>[0m
+[31m      #14 0x55a8df7acec8 <unknown>[0m
+[31m      #15 0x55a8df788360 <unknown>[0m
+[31m      #16 0x55a8df7c8a68 <unknown>[0m
+[31m      #17 0x55a8df7c8be8 <unknown>[0m
+[31m      #18 0x55a8df7e27fd <unknown>[0m
+[31m      #19 0x7f42a916d609 <unknown>[0m
+[31m      ./features/support/hooks.rb:10:in `After'[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4a435d <unknown>[0m
+[31m      #4 0x55a8df520d77 <unknown>[0m
+[31m      #5 0x55a8df5185b8 <unknown>[0m
+[31m      #6 0x55a8df4edd1a <unknown>[0m
+[31m      #7 0x55a8df4eee75 <unknown>[0m
+[31m      #8 0x55a8df792efd <unknown>[0m
+[31m      #9 0x55a8df7ac19b <unknown>[0m
+[31m      #10 0x55a8df794c65 <unknown>[0m
+[31m      #11 0x55a8df7acec8 <unknown>[0m
+[31m      #12 0x55a8df788360 <unknown>[0m
+[31m      #13 0x55a8df7c8a68 <unknown>[0m
+[31m      #14 0x55a8df7c8be8 <unknown>[0m
+[31m      #15 0x55a8df7e27fd <unknown>[0m
+[31m      #16 0x7f42a916d609 <unknown>[0m
+
+# language: pt
+[36m@login[0m
+Funcionalidade: Realizar Login
+
+  [36m@loginValido[0m
+  Cenario: Usuário Cadastrado[90m                                           # features/fixtures/Login/login_auto.feature:7[0m
+[31m chrome not reachable[0m
+[31m   (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m #0 0x55a8df764ad3 <unknown>[0m
+[31m #1 0x55a8df4c43ff <unknown>[0m
+[31m #2 0x55a8df4b2b94 <unknown>[0m
+[31m #3 0x55a8df4b35a9 <unknown>[0m
+[31m #4 0x55a8df4b5302 <unknown>[0m
+[31m #5 0x55a8df4ad6f6 <unknown>[0m
+[31m #6 0x55a8df4c5972 <unknown>[0m
+[31m #7 0x55a8df52aea1 <unknown>[0m
+[31m #8 0x55a8df5184e3 <unknown>[0m
+[31m #9 0x55a8df4edd1a <unknown>[0m
+[31m #10 0x55a8df4eee75 <unknown>[0m
+[31m #11 0x55a8df792efd <unknown>[0m
+[31m #12 0x55a8df7ac19b <unknown>[0m
+[31m #13 0x55a8df794c65 <unknown>[0m
+[31m #14 0x55a8df7acec8 <unknown>[0m
+[31m #15 0x55a8df788360 <unknown>[0m
+[31m #16 0x55a8df7c8a68 <unknown>[0m
+[31m #17 0x55a8df7c8be8 <unknown>[0m
+[31m #18 0x55a8df7e27fd <unknown>[0m
+[31m #19 0x7f42a916d609 <unknown>[0m
+[31m ./features/support/hooks.rb:2:in `Before'[0m
+    [36mDado que estou na [36m[1m'pagina inicial'[0m[0m[36m[90m                                  # features/step_definitions/steps_cadastro_auto.rb:3[0m[0m
+    [36mQuando quero fazer login[90m                                            # features/step_definitions/steps_login_auto.rb:3[0m[0m
+    [36mE preencho meus dados [36m[1m"henrique.reis3@webjump.com.br"[0m[0m[36m e [36m[1m"senha123@"[0m[0m[36m[90m # features/step_definitions/steps_login_auto.rb:7[0m[0m
+    [36mEntão estarei logado[90m                                                # features/step_definitions/steps_login_auto.rb:11[0m[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4b35a9 <unknown>[0m
+[31m      #4 0x55a8df4b5302 <unknown>[0m
+[31m      #5 0x55a8df4ad6f6 <unknown>[0m
+[31m      #6 0x55a8df4c5972 <unknown>[0m
+[31m      #7 0x55a8df52aea1 <unknown>[0m
+[31m      #8 0x55a8df5184e3 <unknown>[0m
+[31m      #9 0x55a8df4edd1a <unknown>[0m
+[31m      #10 0x55a8df4eee75 <unknown>[0m
+[31m      #11 0x55a8df792efd <unknown>[0m
+[31m      #12 0x55a8df7ac19b <unknown>[0m
+[31m      #13 0x55a8df794c65 <unknown>[0m
+[31m      #14 0x55a8df7acec8 <unknown>[0m
+[31m      #15 0x55a8df788360 <unknown>[0m
+[31m      #16 0x55a8df7c8a68 <unknown>[0m
+[31m      #17 0x55a8df7c8be8 <unknown>[0m
+[31m      #18 0x55a8df7e27fd <unknown>[0m
+[31m      #19 0x7f42a916d609 <unknown>[0m
+[31m      ./features/support/hooks.rb:10:in `After'[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4a435d <unknown>[0m
+[31m      #4 0x55a8df520d77 <unknown>[0m
+[31m      #5 0x55a8df5185b8 <unknown>[0m
+[31m      #6 0x55a8df4edd1a <unknown>[0m
+[31m      #7 0x55a8df4eee75 <unknown>[0m
+[31m      #8 0x55a8df792efd <unknown>[0m
+[31m      #9 0x55a8df7ac19b <unknown>[0m
+[31m      #10 0x55a8df794c65 <unknown>[0m
+[31m      #11 0x55a8df7acec8 <unknown>[0m
+[31m      #12 0x55a8df788360 <unknown>[0m
+[31m      #13 0x55a8df7c8a68 <unknown>[0m
+[31m      #14 0x55a8df7c8be8 <unknown>[0m
+[31m      #15 0x55a8df7e27fd <unknown>[0m
+[31m      #16 0x7f42a916d609 <unknown>[0m
+
+  [36m@loginInvalido[0m
+  Esquema do Cenario: Login Inválido[90m            # features/fixtures/Login/login_auto.feature:14[0m
+    [36mDado que estou na 'pagina inicial'[90m          # features/fixtures/Login/login_auto.feature:15[0m[0m
+    [36mQuando quero fazer login[90m                    # features/fixtures/Login/login_auto.feature:16[0m[0m
+    [36mE preencho meus dados "<email>" e "<senha>"[90m # features/fixtures/Login/login_auto.feature:17[0m[0m
+    [36mEntão devo ler a '<mensagem>'[90m               # features/fixtures/Login/login_auto.feature:18[0m[0m
+
+    Exemplos: Dados Inválidos
+      | [36m[1memail                       [0m[0m[36m[0m |[0m [36m[1msenha    [0m[0m[36m[0m |[0m [36m[1mmensagem                                      [0m[0m[36m[0m |[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4b35a9 <unknown>[0m
+[31m      #4 0x55a8df4b5302 <unknown>[0m
+[31m      #5 0x55a8df4ad6f6 <unknown>[0m
+[31m      #6 0x55a8df4c5972 <unknown>[0m
+[31m      #7 0x55a8df52aea1 <unknown>[0m
+[31m      #8 0x55a8df5184e3 <unknown>[0m
+[31m      #9 0x55a8df4edd1a <unknown>[0m
+[31m      #10 0x55a8df4eee75 <unknown>[0m
+[31m      #11 0x55a8df792efd <unknown>[0m
+[31m      #12 0x55a8df7ac19b <unknown>[0m
+[31m      #13 0x55a8df794c65 <unknown>[0m
+[31m      #14 0x55a8df7acec8 <unknown>[0m
+[31m      #15 0x55a8df788360 <unknown>[0m
+[31m      #16 0x55a8df7c8a68 <unknown>[0m
+[31m      #17 0x55a8df7c8be8 <unknown>[0m
+[31m      #18 0x55a8df7e27fd <unknown>[0m
+[31m      #19 0x7f42a916d609 <unknown>[0m
+[31m      ./features/support/hooks.rb:2:in `Before'[0m
+      | [36mhenrique.reis@webjump.com.br[0m[0m |[0m [36msenha    [0m[0m |[0m [36mO login da conta estava incorreto ou sua conta[0m[0m |[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4b35a9 <unknown>[0m
+[31m      #4 0x55a8df4b5302 <unknown>[0m
+[31m      #5 0x55a8df4ad6f6 <unknown>[0m
+[31m      #6 0x55a8df4c5972 <unknown>[0m
+[31m      #7 0x55a8df52aea1 <unknown>[0m
+[31m      #8 0x55a8df5184e3 <unknown>[0m
+[31m      #9 0x55a8df4edd1a <unknown>[0m
+[31m      #10 0x55a8df4eee75 <unknown>[0m
+[31m      #11 0x55a8df792efd <unknown>[0m
+[31m      #12 0x55a8df7ac19b <unknown>[0m
+[31m      #13 0x55a8df794c65 <unknown>[0m
+[31m      #14 0x55a8df7acec8 <unknown>[0m
+[31m      #15 0x55a8df788360 <unknown>[0m
+[31m      #16 0x55a8df7c8a68 <unknown>[0m
+[31m      #17 0x55a8df7c8be8 <unknown>[0m
+[31m      #18 0x55a8df7e27fd <unknown>[0m
+[31m      #19 0x7f42a916d609 <unknown>[0m
+[31m      ./features/support/hooks.rb:10:in `After'[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4a435d <unknown>[0m
+[31m      #4 0x55a8df520d77 <unknown>[0m
+[31m      #5 0x55a8df5185b8 <unknown>[0m
+[31m      #6 0x55a8df4edd1a <unknown>[0m
+[31m      #7 0x55a8df4eee75 <unknown>[0m
+[31m      #8 0x55a8df792efd <unknown>[0m
+[31m      #9 0x55a8df7ac19b <unknown>[0m
+[31m      #10 0x55a8df794c65 <unknown>[0m
+[31m      #11 0x55a8df7acec8 <unknown>[0m
+[31m      #12 0x55a8df788360 <unknown>[0m
+[31m      #13 0x55a8df7c8a68 <unknown>[0m
+[31m      #14 0x55a8df7c8be8 <unknown>[0m
+[31m      #15 0x55a8df7e27fd <unknown>[0m
+[31m      #16 0x7f42a916d609 <unknown>[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4b35a9 <unknown>[0m
+[31m      #4 0x55a8df4b5302 <unknown>[0m
+[31m      #5 0x55a8df4ad6f6 <unknown>[0m
+[31m      #6 0x55a8df4c5972 <unknown>[0m
+[31m      #7 0x55a8df52aea1 <unknown>[0m
+[31m      #8 0x55a8df5184e3 <unknown>[0m
+[31m      #9 0x55a8df4edd1a <unknown>[0m
+[31m      #10 0x55a8df4eee75 <unknown>[0m
+[31m      #11 0x55a8df792efd <unknown>[0m
+[31m      #12 0x55a8df7ac19b <unknown>[0m
+[31m      #13 0x55a8df794c65 <unknown>[0m
+[31m      #14 0x55a8df7acec8 <unknown>[0m
+[31m      #15 0x55a8df788360 <unknown>[0m
+[31m      #16 0x55a8df7c8a68 <unknown>[0m
+[31m      #17 0x55a8df7c8be8 <unknown>[0m
+[31m      #18 0x55a8df7e27fd <unknown>[0m
+[31m      #19 0x7f42a916d609 <unknown>[0m
+[31m      ./features/support/hooks.rb:2:in `Before'[0m
+      | [36mhenrique.reis@webjump.com.br[0m[0m |[0m [36msenha123@[0m[0m |[0m [36mO login da conta estava incorreto ou sua conta[0m[0m |[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4b35a9 <unknown>[0m
+[31m      #4 0x55a8df4b5302 <unknown>[0m
+[31m      #5 0x55a8df4ad6f6 <unknown>[0m
+[31m      #6 0x55a8df4c5972 <unknown>[0m
+[31m      #7 0x55a8df52aea1 <unknown>[0m
+[31m      #8 0x55a8df5184e3 <unknown>[0m
+[31m      #9 0x55a8df4edd1a <unknown>[0m
+[31m      #10 0x55a8df4eee75 <unknown>[0m
+[31m      #11 0x55a8df792efd <unknown>[0m
+[31m      #12 0x55a8df7ac19b <unknown>[0m
+[31m      #13 0x55a8df794c65 <unknown>[0m
+[31m      #14 0x55a8df7acec8 <unknown>[0m
+[31m      #15 0x55a8df788360 <unknown>[0m
+[31m      #16 0x55a8df7c8a68 <unknown>[0m
+[31m      #17 0x55a8df7c8be8 <unknown>[0m
+[31m      #18 0x55a8df7e27fd <unknown>[0m
+[31m      #19 0x7f42a916d609 <unknown>[0m
+[31m      ./features/support/hooks.rb:10:in `After'[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4a435d <unknown>[0m
+[31m      #4 0x55a8df520d77 <unknown>[0m
+[31m      #5 0x55a8df5185b8 <unknown>[0m
+[31m      #6 0x55a8df4edd1a <unknown>[0m
+[31m      #7 0x55a8df4eee75 <unknown>[0m
+[31m      #8 0x55a8df792efd <unknown>[0m
+[31m      #9 0x55a8df7ac19b <unknown>[0m
+[31m      #10 0x55a8df794c65 <unknown>[0m
+[31m      #11 0x55a8df7acec8 <unknown>[0m
+[31m      #12 0x55a8df788360 <unknown>[0m
+[31m      #13 0x55a8df7c8a68 <unknown>[0m
+[31m      #14 0x55a8df7c8be8 <unknown>[0m
+[31m      #15 0x55a8df7e27fd <unknown>[0m
+[31m      #16 0x7f42a916d609 <unknown>[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4b35a9 <unknown>[0m
+[31m      #4 0x55a8df4b5302 <unknown>[0m
+[31m      #5 0x55a8df4ad6f6 <unknown>[0m
+[31m      #6 0x55a8df4c5972 <unknown>[0m
+[31m      #7 0x55a8df52aea1 <unknown>[0m
+[31m      #8 0x55a8df5184e3 <unknown>[0m
+[31m      #9 0x55a8df4edd1a <unknown>[0m
+[31m      #10 0x55a8df4eee75 <unknown>[0m
+[31m      #11 0x55a8df792efd <unknown>[0m
+[31m      #12 0x55a8df7ac19b <unknown>[0m
+[31m      #13 0x55a8df794c65 <unknown>[0m
+[31m      #14 0x55a8df7acec8 <unknown>[0m
+[31m      #15 0x55a8df788360 <unknown>[0m
+[31m      #16 0x55a8df7c8a68 <unknown>[0m
+[31m      #17 0x55a8df7c8be8 <unknown>[0m
+[31m      #18 0x55a8df7e27fd <unknown>[0m
+[31m      #19 0x7f42a916d609 <unknown>[0m
+[31m      ./features/support/hooks.rb:2:in `Before'[0m
+      | [36mhenrique                    [0m[0m |[0m [36msenha123@[0m[0m |[0m [36mPor favor insira um endereço de email válido  [0m[0m |[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4b35a9 <unknown>[0m
+[31m      #4 0x55a8df4b5302 <unknown>[0m
+[31m      #5 0x55a8df4ad6f6 <unknown>[0m
+[31m      #6 0x55a8df4c5972 <unknown>[0m
+[31m      #7 0x55a8df52aea1 <unknown>[0m
+[31m      #8 0x55a8df5184e3 <unknown>[0m
+[31m      #9 0x55a8df4edd1a <unknown>[0m
+[31m      #10 0x55a8df4eee75 <unknown>[0m
+[31m      #11 0x55a8df792efd <unknown>[0m
+[31m      #12 0x55a8df7ac19b <unknown>[0m
+[31m      #13 0x55a8df794c65 <unknown>[0m
+[31m      #14 0x55a8df7acec8 <unknown>[0m
+[31m      #15 0x55a8df788360 <unknown>[0m
+[31m      #16 0x55a8df7c8a68 <unknown>[0m
+[31m      #17 0x55a8df7c8be8 <unknown>[0m
+[31m      #18 0x55a8df7e27fd <unknown>[0m
+[31m      #19 0x7f42a916d609 <unknown>[0m
+[31m      ./features/support/hooks.rb:10:in `After'[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4a435d <unknown>[0m
+[31m      #4 0x55a8df520d77 <unknown>[0m
+[31m      #5 0x55a8df5185b8 <unknown>[0m
+[31m      #6 0x55a8df4edd1a <unknown>[0m
+[31m      #7 0x55a8df4eee75 <unknown>[0m
+[31m      #8 0x55a8df792efd <unknown>[0m
+[31m      #9 0x55a8df7ac19b <unknown>[0m
+[31m      #10 0x55a8df794c65 <unknown>[0m
+[31m      #11 0x55a8df7acec8 <unknown>[0m
+[31m      #12 0x55a8df788360 <unknown>[0m
+[31m      #13 0x55a8df7c8a68 <unknown>[0m
+[31m      #14 0x55a8df7c8be8 <unknown>[0m
+[31m      #15 0x55a8df7e27fd <unknown>[0m
+[31m      #16 0x7f42a916d609 <unknown>[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4b35a9 <unknown>[0m
+[31m      #4 0x55a8df4b5302 <unknown>[0m
+[31m      #5 0x55a8df4ad6f6 <unknown>[0m
+[31m      #6 0x55a8df4c5972 <unknown>[0m
+[31m      #7 0x55a8df52aea1 <unknown>[0m
+[31m      #8 0x55a8df5184e3 <unknown>[0m
+[31m      #9 0x55a8df4edd1a <unknown>[0m
+[31m      #10 0x55a8df4eee75 <unknown>[0m
+[31m      #11 0x55a8df792efd <unknown>[0m
+[31m      #12 0x55a8df7ac19b <unknown>[0m
+[31m      #13 0x55a8df794c65 <unknown>[0m
+[31m      #14 0x55a8df7acec8 <unknown>[0m
+[31m      #15 0x55a8df788360 <unknown>[0m
+[31m      #16 0x55a8df7c8a68 <unknown>[0m
+[31m      #17 0x55a8df7c8be8 <unknown>[0m
+[31m      #18 0x55a8df7e27fd <unknown>[0m
+[31m      #19 0x7f42a916d609 <unknown>[0m
+[31m      ./features/support/hooks.rb:2:in `Before'[0m
+      | [36m                            [0m[0m |[0m [36msenha    [0m[0m |[0m [36mEsse campo é obrigatório.                     [0m[0m |[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4b35a9 <unknown>[0m
+[31m      #4 0x55a8df4b5302 <unknown>[0m
+[31m      #5 0x55a8df4ad6f6 <unknown>[0m
+[31m      #6 0x55a8df4c5972 <unknown>[0m
+[31m      #7 0x55a8df52aea1 <unknown>[0m
+[31m      #8 0x55a8df5184e3 <unknown>[0m
+[31m      #9 0x55a8df4edd1a <unknown>[0m
+[31m      #10 0x55a8df4eee75 <unknown>[0m
+[31m      #11 0x55a8df792efd <unknown>[0m
+[31m      #12 0x55a8df7ac19b <unknown>[0m
+[31m      #13 0x55a8df794c65 <unknown>[0m
+[31m      #14 0x55a8df7acec8 <unknown>[0m
+[31m      #15 0x55a8df788360 <unknown>[0m
+[31m      #16 0x55a8df7c8a68 <unknown>[0m
+[31m      #17 0x55a8df7c8be8 <unknown>[0m
+[31m      #18 0x55a8df7e27fd <unknown>[0m
+[31m      #19 0x7f42a916d609 <unknown>[0m
+[31m      ./features/support/hooks.rb:10:in `After'[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4a435d <unknown>[0m
+[31m      #4 0x55a8df520d77 <unknown>[0m
+[31m      #5 0x55a8df5185b8 <unknown>[0m
+[31m      #6 0x55a8df4edd1a <unknown>[0m
+[31m      #7 0x55a8df4eee75 <unknown>[0m
+[31m      #8 0x55a8df792efd <unknown>[0m
+[31m      #9 0x55a8df7ac19b <unknown>[0m
+[31m      #10 0x55a8df794c65 <unknown>[0m
+[31m      #11 0x55a8df7acec8 <unknown>[0m
+[31m      #12 0x55a8df788360 <unknown>[0m
+[31m      #13 0x55a8df7c8a68 <unknown>[0m
+[31m      #14 0x55a8df7c8be8 <unknown>[0m
+[31m      #15 0x55a8df7e27fd <unknown>[0m
+[31m      #16 0x7f42a916d609 <unknown>[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4b35a9 <unknown>[0m
+[31m      #4 0x55a8df4b5302 <unknown>[0m
+[31m      #5 0x55a8df4ad6f6 <unknown>[0m
+[31m      #6 0x55a8df4c5972 <unknown>[0m
+[31m      #7 0x55a8df52aea1 <unknown>[0m
+[31m      #8 0x55a8df5184e3 <unknown>[0m
+[31m      #9 0x55a8df4edd1a <unknown>[0m
+[31m      #10 0x55a8df4eee75 <unknown>[0m
+[31m      #11 0x55a8df792efd <unknown>[0m
+[31m      #12 0x55a8df7ac19b <unknown>[0m
+[31m      #13 0x55a8df794c65 <unknown>[0m
+[31m      #14 0x55a8df7acec8 <unknown>[0m
+[31m      #15 0x55a8df788360 <unknown>[0m
+[31m      #16 0x55a8df7c8a68 <unknown>[0m
+[31m      #17 0x55a8df7c8be8 <unknown>[0m
+[31m      #18 0x55a8df7e27fd <unknown>[0m
+[31m      #19 0x7f42a916d609 <unknown>[0m
+[31m      ./features/support/hooks.rb:2:in `Before'[0m
+      | [36mhenrique.reis@webjump.com.br[0m[0m |[0m [36m         [0m[0m |[0m [36mEsse campo é obrigatório.                     [0m[0m |[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4b35a9 <unknown>[0m
+[31m      #4 0x55a8df4b5302 <unknown>[0m
+[31m      #5 0x55a8df4ad6f6 <unknown>[0m
+[31m      #6 0x55a8df4c5972 <unknown>[0m
+[31m      #7 0x55a8df52aea1 <unknown>[0m
+[31m      #8 0x55a8df5184e3 <unknown>[0m
+[31m      #9 0x55a8df4edd1a <unknown>[0m
+[31m      #10 0x55a8df4eee75 <unknown>[0m
+[31m      #11 0x55a8df792efd <unknown>[0m
+[31m      #12 0x55a8df7ac19b <unknown>[0m
+[31m      #13 0x55a8df794c65 <unknown>[0m
+[31m      #14 0x55a8df7acec8 <unknown>[0m
+[31m      #15 0x55a8df788360 <unknown>[0m
+[31m      #16 0x55a8df7c8a68 <unknown>[0m
+[31m      #17 0x55a8df7c8be8 <unknown>[0m
+[31m      #18 0x55a8df7e27fd <unknown>[0m
+[31m      #19 0x7f42a916d609 <unknown>[0m
+[31m      ./features/support/hooks.rb:10:in `After'[0m
+[31m      chrome not reachable[0m
+[31m        (Session info: chrome=101.0.4951.64) (Selenium::WebDriver::Error::WebDriverError)[0m
+[31m      #0 0x55a8df764ad3 <unknown>[0m
+[31m      #1 0x55a8df4c43ff <unknown>[0m
+[31m      #2 0x55a8df4b2b94 <unknown>[0m
+[31m      #3 0x55a8df4a435d <unknown>[0m
+[31m      #4 0x55a8df520d77 <unknown>[0m
+[31m      #5 0x55a8df5185b8 <unknown>[0m
+[31m      #6 0x55a8df4edd1a <unknown>[0m
+[31m      #7 0x55a8df4eee75 <unknown>[0m
+[31m      #8 0x55a8df792efd <unknown>[0m
+[31m      #9 0x55a8df7ac19b <unknown>[0m
+[31m      #10 0x55a8df794c65 <unknown>[0m
+[31m      #11 0x55a8df7acec8 <unknown>[0m
+[31m      #12 0x55a8df788360 <unknown>[0m
+[31m      #13 0x55a8df7c8a68 <unknown>[0m
+[31m      #14 0x55a8df7c8be8 <unknown>[0m
+[31m      #15 0x55a8df7e27fd <unknown>[0m
+[31m      #16 0x7f42a916d609 <unknown>[0m
+
+[31mFailing Scenarios:[0m
+[31mcucumber -p html -p bdd -p json -p chrome features/fixtures/Busca/busca_auto.feature:7[0m[90m # Cenário: Busca Valida Sem Login[0m
+[31mcucumber -p html -p bdd -p json -p chrome features/fixtures/Busca/busca_auto.feature:13[0m[90m # Cenário: Busca Invalida Sem Login[0m
+[31mcucumber -p html -p bdd -p json -p chrome features/fixtures/Busca/busca_auto.feature:19[0m[90m # Cenário: Busca Valida Logado[0m
+[31mcucumber -p html -p bdd -p json -p chrome features/fixtures/Busca/busca_auto.feature:26[0m[90m # Cenário: Busca Invalida Logado[0m
+[31mcucumber -p html -p bdd -p json -p chrome features/fixtures/Cadastro/cadastro_auto.feature:15[0m[90m # Esquema do Cenário: Campos Obrigatórios, Dados Ausentes (#1)[0m
+[31mcucumber -p html -p bdd -p json -p chrome features/fixtures/Cadastro/cadastro_auto.feature:16[0m[90m # Esquema do Cenário: Campos Obrigatórios, Dados Ausentes (#2)[0m
+[31mcucumber -p html -p bdd -p json -p chrome features/fixtures/Cadastro/cadastro_auto.feature:17[0m[90m # Esquema do Cenário: Campos Obrigatórios, Dados Ausentes (#3)[0m
+[31mcucumber -p html -p bdd -p json -p chrome features/fixtures/Cadastro/cadastro_auto.feature:18[0m[90m # Esquema do Cenário: Campos Obrigatórios, Dados Ausentes (#4)[0m
+[31mcucumber -p html -p bdd -p json -p chrome features/fixtures/Cadastro/cadastro_auto.feature:19[0m[90m # Esquema do Cenário: Campos Obrigatórios, Dados Ausentes (#5)[0m
+[31mcucumber -p html -p bdd -p json -p chrome features/fixtures/Cadastro/cadastro_auto.feature:20[0m[90m # Esquema do Cenário: Campos Obrigatórios, Dados Ausentes (#6)[0m
+[31mcucumber -p html -p bdd -p json -p chrome features/fixtures/Cadastro/cadastro_auto.feature:31[0m[90m # Esquema do Cenário: Cadastro Inválido, Dados Inválidos (#1)[0m
+[31mcucumber -p html -p bdd -p json -p chrome features/fixtures/Cadastro/cadastro_auto.feature:32[0m[90m # Esquema do Cenário: Cadastro Inválido, Dados Inválidos (#2)[0m
+[31mcucumber -p html -p bdd -p json -p chrome features/fixtures/Cadastro/cadastro_auto.feature:33[0m[90m # Esquema do Cenário: Cadastro Inválido, Dados Inválidos (#3)[0m
+[31mcucumber -p html -p bdd -p json -p chrome features/fixtures/Cadastro/cadastro_auto.feature:34[0m[90m # Esquema do Cenário: Cadastro Inválido, Dados Inválidos (#4)[0m
+[31mcucumber -p html -p bdd -p json -p chrome features/fixtures/Cadastro/cadastro_auto.feature:38[0m[90m # Cenário: Cadastro Válido[0m
+[31mcucumber -p html -p bdd -p json -p chrome features/fixtures/Login/login_auto.feature:7[0m[90m # Cenario: Usuário Cadastrado[0m
+[31mcucumber -p html -p bdd -p json -p chrome features/fixtures/Login/login_auto.feature:22[0m[90m # Esquema do Cenario: Login Inválido, Dados Inválidos (#1)[0m
+[31mcucumber -p html -p bdd -p json -p chrome features/fixtures/Login/login_auto.feature:23[0m[90m # Esquema do Cenario: Login Inválido, Dados Inválidos (#2)[0m
+[31mcucumber -p html -p bdd -p json -p chrome features/fixtures/Login/login_auto.feature:24[0m[90m # Esquema do Cenario: Login Inválido, Dados Inválidos (#3)[0m
+[31mcucumber -p html -p bdd -p json -p chrome features/fixtures/Login/login_auto.feature:25[0m[90m # Esquema do Cenario: Login Inválido, Dados Inválidos (#4)[0m
+[31mcucumber -p html -p bdd -p json -p chrome features/fixtures/Login/login_auto.feature:26[0m[90m # Esquema do Cenario: Login Inválido, Dados Inválidos (#5)[0m
+
+21 scenarios ([31m21 failed[0m)
+82 steps ([31m1 failed[0m, [36m73 skipped[0m, [33m6 undefined[0m, [32m2 passed[0m)
+0m7.190s
+[33m[0m
+[33mYou can implement step definitions for undefined steps with these snippets:[0m
+[33m[0m
+[33mQuando("clico na barra de pesquisa") do[0m
+[33m  pending # Write code here that turns the phrase above into concrete actions[0m
+[33mend[0m
+[33m[0m
+[33mQuando("digito minha busca") do[0m
+[33m  pending # Write code here that turns the phrase above into concrete actions[0m
+[33mend[0m
+[33m[0m
+[33mEntão("verei os resultados") do[0m
+[33m  pending # Write code here that turns the phrase above into concrete actions[0m
+[33mend[0m
+
