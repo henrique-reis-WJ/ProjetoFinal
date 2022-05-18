@@ -2,11 +2,13 @@ searchs = Searchs.new
 login = Login.new
 
 Dado("que quero fazer uma busca sem login") do
-    visit 'https://magento.nublue.co.uk/'
+    visit '/'
 end
 
 Dado("que quero fazer uma busca com login") do
-    visit 'https://magento.nublue.co.uk/'
+    visit '/'
+    login.LoginLink
+    login.FieldsLogin('henrique.reis3@webjump.com.br', 'senha123@')
 end
   
 Quando("clico na barra de pesquisa e digito corretamente {string}") do |searchOK|
