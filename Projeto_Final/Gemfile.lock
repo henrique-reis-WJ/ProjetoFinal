@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/faker-ruby/faker.git
+  revision: 7846d10edaa0786a7b7df707533dbc7e995d3299
+  branch: master
+  specs:
+    faker (2.21.0)
+      i18n (>= 1.8.11, < 2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -15,6 +23,7 @@ GEM
       regexp_parser (>= 1.5, < 3.0)
       xpath (~> 3.2)
     childprocess (4.1.0)
+    concurrent-ruby (1.1.10)
     cucumber (3.2.0)
       builder (>= 2.1.2)
       cucumber-core (~> 3.2.0)
@@ -33,11 +42,13 @@ GEM
     cucumber-wire (0.0.1)
     diff-lcs (1.5.0)
     gherkin (5.1.0)
-    json (2.6.1)
+    i18n (1.10.0)
+      concurrent-ruby (~> 1.0)
+    json (2.6.2)
     matrix (0.4.2)
     mini_mime (1.1.2)
     multi_json (1.15.0)
-    multi_test (1.0.0)
+    multi_test (1.1.0)
     nokogiri (1.13.6-x86_64-linux)
       racc (~> 1.4)
     public_suffix (4.0.7)
@@ -49,19 +60,19 @@ GEM
     report_builder (1.9)
       json (>= 2.3.0)
     rexml (3.2.5)
-    rspec (3.11.0)
-      rspec-core (~> 3.11.0)
-      rspec-expectations (~> 3.11.0)
-      rspec-mocks (~> 3.11.0)
-    rspec-core (3.11.0)
-      rspec-support (~> 3.11.0)
-    rspec-expectations (3.11.0)
+    rspec (3.8.0)
+      rspec-core (~> 3.8.0)
+      rspec-expectations (~> 3.8.0)
+      rspec-mocks (~> 3.8.0)
+    rspec-core (3.8.2)
+      rspec-support (~> 3.8.0)
+    rspec-expectations (3.8.6)
       diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.11.0)
-    rspec-mocks (3.11.1)
+      rspec-support (~> 3.8.0)
+    rspec-mocks (3.8.2)
       diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.11.0)
-    rspec-support (3.11.0)
+      rspec-support (~> 3.8.0)
+    rspec-support (3.8.3)
     rubyzip (2.3.2)
     selenium-webdriver (4.1.0)
       childprocess (>= 0.5, < 5.0)
@@ -76,8 +87,9 @@ PLATFORMS
 DEPENDENCIES
   capybara
   cucumber (= 3.2.0)
+  faker!
   report_builder
-  rspec
+  rspec (= 3.8.0)
   selenium-webdriver
 
 BUNDLED WITH

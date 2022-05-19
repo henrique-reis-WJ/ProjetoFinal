@@ -1,5 +1,11 @@
-class CreateAccount
+class CreateAccount < Methods
     include Capybara::DSL
+
+    def initialize
+        @register_name = Faker::Name.first_name
+        @email_cadastro = Faker::Internet.free_email(name: @nome_cadastro)
+        @senha_cadastro = SecureRandom.alphanumeric(20) + '0*'
+    end
 
     def access_page
         visit 'http://festas.magentoteste.local/'
@@ -10,9 +16,10 @@ class CreateAccount
     end
 
     def fill_fields (name, last_name, email, password, confirm_password)
+        preenchimento('emailRegiester', email)
         find_by_id('firstname').set name
         find_by_id('lastname').set last_name
-        find_by_id('email_address').set email
+        #find_by_id('email_address').set email
         find_by_id('password').set password
         find_by_id('password-confirmation').set confirm_password
     end

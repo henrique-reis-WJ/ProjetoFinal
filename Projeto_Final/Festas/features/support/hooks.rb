@@ -1,5 +1,6 @@
 Before do |scenario|
     Capybara.current_session.driver.browser.manage.delete_all_cookies
+    @cadastro= CreateAccount.new
 end
 
 After do |scenario|
