@@ -10,6 +10,10 @@ Quando("prencho {string}, {string}, {string}, {string} e {string}") do |nome, so
   @signup.form(nome, sobrenome, email, senha, confirmar_senha)
 end
 
+Quando ("prencho nome, sobrenome, email, senha e confirmar senha validos") do
+  @signup.fakeForm
+end
+
 Quando("clico no botão criar conta") do
   @signup.clickButton
 end

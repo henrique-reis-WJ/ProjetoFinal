@@ -2,7 +2,7 @@ class CreateAccount < Methods
     include Capybara::DSL
 
     def accessPage
-        visit 'http://festas.magentoteste.local/'
+        visit '/' #Site está referenciado no env.rb
     end
 
     def accessCreateAccount
@@ -10,13 +10,6 @@ class CreateAccount < Methods
     end
 
     def form (name, last_name, email, password, confirm_password)
-
-        newEmail = email
-
-        if email.eql? "email"
-            newEmail = Faker::Internet.email       
-        end
-
         fillFields(EL['nameRegister'], name)
         fillFields(EL['lastNameRegister'], last_name)
         fillFields(EL['emailRegister'], email)
@@ -24,6 +17,14 @@ class CreateAccount < Methods
         fillFields(EL['confirmPassword'], confirm_password)
     end
 
+    def fakeForm
+        fillFields(EL['nameRegister'], Faker::Name.name)
+        fillFields(EL['lastNameRegister'], Faker::Name.name)
+        fillFields(EL['emailRegister'], Faker::Internet.email)
+        fillFields(EL['passwordRegister'], 'Abc1234*')
+        fillFields(EL['confirmPassword'], 'Abc1234*')
+    end
+    
     def clickButton
         clickButtonByText(EL['botaoCadastre'])
     end

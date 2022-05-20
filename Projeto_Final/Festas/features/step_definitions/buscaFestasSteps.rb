@@ -1,4 +1,4 @@
-Quando("busco por {string} invalido") do |message|
+Quando("busco por {string}") do |message|
   @search.searchProduct(message)
 end
 
