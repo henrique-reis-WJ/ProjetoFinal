@@ -34,7 +34,7 @@ Funcionalidade: Realizar Cadastro
         |Henrique|Ribeiro  |henrique.reis@webjump.com.br|Pa$$wrd!|Pa$$wrd!       |Já existe uma conta com este endereço de e-mail              |
 
     
-        @cadSucesso
+        @cadValido
         Cenário: Cadastro Válido
         Dado que estou na 'pagina inicial'
         Quando quero realizar um cadastro 

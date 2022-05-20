@@ -1,25 +1,25 @@
-class CreateAccount
-include Capybara::DSL
+class CreateAccount < Methods
+    include Capybara::DSL
 
     def BtnCreate
         click_link 'Cadastre-se'
     end 
 
     def FieldsSchema (name_p, lastname_p, email_p, password_p, confirm_pass_p)
-        find('#firstname').set name_p
-        find('#lastname').set lastname_p
-        find('#email_address').set email_p
-        find('#password').set password_p
-        find('#password-confirmation').set confirm_pass_p
+        fillFields(EL['nameCreate'], name_p)
+        fillFields(EL['lastCreate'], lastname_p)
+        fillFields(EL['emailCreate'], email_p)
+        fillFields(EL['passwordCreate'], password_p)
+        fillFields(EL['passConfirm'], confirm_pass_p)
         click_button 'Cadastre-se'
     end
 
     def FieldsFake
-        find('#firstname').set(Faker::Name.name)
-        find('#lastname').set(Faker::Name.name)
-        find('#email_address').set(Faker::Internet.email)
-        find('#password').set('pa$$W0rd')
-        find('#password-confirmation').set('pa$$W0rd')
+        fillFields(EL['nameCreate'],Faker::Name.name)
+        fillFields(EL['lastCreate'],Faker::Name.name)
+        fillFields(EL['emailCreate'],Faker::Internet.email)
+        fillFields(EL['passwordCreate'],'pa$$W0rd')
+        fillFields(EL['passConfirm'],'pa$$W0rd')
         click_button 'Cadastre-se'
     end
     

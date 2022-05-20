@@ -1,4 +1,10 @@
+require "cucumber/rake/task"
+require 'erb'
+
 Before do
+    @login = Login.new
+    @createAccount = CreateAccount.new
+
     Capybara.current_session.driver.browser.manage.delete_all_cookies
     page.driver.browser.manage.window.resize_to(1920, 1080)
 end
