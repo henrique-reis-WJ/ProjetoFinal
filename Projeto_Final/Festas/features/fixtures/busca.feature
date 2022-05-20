@@ -4,7 +4,7 @@
 Funcionalidade: Busca
 
 #Usuário logado
-
+#mudança pro commit
 @BuscaValidaLogado
 Cenario: Busca valida logado no sistema
 Dado que acesso a pagina principal
