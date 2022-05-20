@@ -12,6 +12,8 @@ GEM
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
     backports (3.23.0)
+    brazilian_documents (0.1.8)
+      digit_checksum (~> 0.2.3)
     builder (3.2.4)
     capybara (3.36.0)
       addressable
@@ -41,6 +43,8 @@ GEM
     cucumber-tag_expressions (1.1.1)
     cucumber-wire (0.0.1)
     diff-lcs (1.5.0)
+    digit_checksum (0.2.3)
+    ffi (1.15.5)
     gherkin (5.1.0)
     i18n (1.10.0)
       concurrent-ruby (~> 1.0)
@@ -74,6 +78,7 @@ GEM
       rspec-support (~> 3.8.0)
     rspec-support (3.8.3)
     rubyzip (2.3.2)
+    rufo (0.13.0)
     selenium-webdriver (4.1.0)
       childprocess (>= 0.5, < 5.0)
       rexml (~> 3.2, >= 3.2.5)
@@ -85,11 +90,14 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  brazilian_documents (~> 0.1.4)
   capybara
   cucumber (= 3.2.0)
   faker!
+  ffi
   report_builder
-  rspec (= 3.8.0)
+  rspec
+  rufo
   selenium-webdriver
 
 BUNDLED WITH
