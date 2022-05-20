@@ -16,10 +16,10 @@ class CreateAccount < Methods
 
     def FieldsFake
         fillFields(EL['nameCreate'],Faker::Name.name)
-        find('#lastname').set(Faker::Name.name)
-        find('#email_address').set(Faker::Internet.email)
-        find('#password').set('pa$$W0rd')
-        find('#password-confirmation').set('pa$$W0rd')
+        fillFields(EL['lastCreate'],Faker::Name.name)
+        fillFields(EL['emailCreate'],Faker::Internet.email)
+        fillFields(EL['passwordCreate'],'pa$$W0rd')
+        fillFields(EL['passConfirm'],'pa$$W0rd')
         click_button 'Cadastre-se'
     end
     
