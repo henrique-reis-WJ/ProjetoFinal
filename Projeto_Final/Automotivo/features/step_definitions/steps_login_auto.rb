@@ -1,18 +1,16 @@
-login = Login.new
-
 Quando("quero fazer login") do
-    login.LoginLink
+    @login.LoginLink
 end
   
 Quando("preencho meus dados {string} e {string}") do |emailL, passwrdL|
-    login.FieldsLogin(emailL, passwrdL)
+    @login.FieldsLogin(emailL, passwrdL)
 end
 
 Então("estarei logado") do 
-    login.ResultLoginOK
+    @login.ResultLoginOK
 end
 
   
 Então("devo ler a {string}") do |error|
-    login.ResultLoginError(error)
+    @login.ResultLoginError(error)
 end

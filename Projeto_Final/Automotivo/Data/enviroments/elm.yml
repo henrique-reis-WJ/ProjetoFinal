@@ -1,0 +1,11 @@
+### Create Account ###
+nameCreate: "#firstname"
+lastCreate: "#lastname"
+emailCreate: "#email_address"
+passwordCreate: "#password"
+passConfirm: "#password-confirmation"
+#btnCreate: "Cadastre-se"
+
+### Login ###
+emailLogin: "#email"
+passwordLogin: "#pass"

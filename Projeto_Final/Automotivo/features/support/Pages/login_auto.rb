@@ -1,4 +1,4 @@
-class Login
+class Login < Methods
 include Capybara::DSL
        
     def LoginLink
@@ -6,14 +6,8 @@ include Capybara::DSL
     end
     
     def FieldsLogin (p_email, p_senha)
-        find('#email').set p_email
-        find('#pass').set p_senha
-        find('#send2').click
-    end
-
-    def FieldsLogin (p_email, p_senha)
-        find('#email').set p_email
-        find('#pass').set p_senha
+        fillFields(EL['emailLogin'], p_email)
+        fillFields(EL['passwordLogin'], p_senha)
         find('#send2').click
     end
     
