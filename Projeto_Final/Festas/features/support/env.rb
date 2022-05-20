@@ -9,5 +9,6 @@ EL = YAML.load_file('./Data/enviroments/elements.yml')
 
 Capybara.configure do |config|
     config.default_driver = :selenium_chrome
+    config.app_host = "http://festas.magentoteste.local"
 end
 

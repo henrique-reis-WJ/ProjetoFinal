@@ -7,11 +7,11 @@ Funcionalidade: Busca
 
 @BuscaValidaLogado
 Cenario: Busca valida logado no sistema
-Dado que acesso a pagina principal
+Dado que acesso na pagina principal
 E clico em entrar
 Quando preencho 'maliriq@mailinator.com' e 'Pa$$w0rd!'
 E clico no botão entre
-E busco por "produto" válido
+E busco por "produto"
 E clico em pesquisar
 Então vejo produto na tela
 
@@ -21,7 +21,7 @@ Dado que acesso a pagina principal
 E clico em entrar
 Quando preencho 'maliriq@mailinator.com' e 'Pa$$w0rd!'
 E clico no botão entre
-E busco por "produto" invalido
+E busco por "produto"
 E clico em pesquisar
 Então devo ver a mensagem "A sua pesquisa não retornou resultados."
 
@@ -30,13 +30,13 @@ Então devo ver a mensagem "A sua pesquisa não retornou resultados."
 @BuscaValidaDeslogado
 Cenario: Busca valida não logado no sistema
 Dado que acesso a pagina principal
-Quando busco por "produto" valido
+Quando busco por "produto"
 E clico em pesquisar
 Então vejo produto na tela
 
 @BuscaInvalidaDeslogado
 Cenario: Busca invalida não logado no sistema
 Dado que acesso a pagina principal
-Quando busco por "produto" invalido
+Quando busco por "produto"
 E clico em pesquisar
 Então devo ver a mensagem "A sua pesquisa não retornou resultados."

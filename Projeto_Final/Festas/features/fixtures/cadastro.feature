@@ -53,6 +53,6 @@ Então devo ver a mensagem "Por favor, digite a senha novamente"
 Cenario: Cadastro com sucesso
 Dado que acesso a pagina principal
 E clico em criar conta
-Quando prencho "Bianca", "Moura", "email", "Abcd1234*" e "Abcd1234*"
+Quando prencho nome, sobrenome, email, senha e confirmar senha validos
 E clico no botão criar conta
 Então devo ver a mensagem 'Obrigado por registrar-se com Festas Store.'
