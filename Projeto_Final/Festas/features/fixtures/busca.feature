@@ -4,10 +4,9 @@
 Funcionalidade: Busca
 
 #Usuário logado
-#mudança pro commit
 @BuscaValidaLogado
 Cenario: Busca valida logado no sistema
-Dado que acesso na pagina principal
+Dado que acesso a pagina principal
 E clico em entrar
 Quando preencho 'maliriq@mailinator.com' e 'Pa$$w0rd!'
 E clico no botão entre

@@ -6,7 +6,7 @@ class CreateAccount < Methods
     end
 
     def accessCreateAccount
-        clickLinkByText(EL['linkCadastre'])
+        clickLink(EL['linkCadastre'])
     end
 
     def form (name, last_name, email, password, confirm_password)
@@ -25,8 +25,8 @@ class CreateAccount < Methods
         fillFields(EL['confirmPassword'], 'Abc1234*')
     end
     
-    def clickButton
-        clickButtonByText(EL['botaoCadastre'])
+    def clickButtonRegister
+        clickButton(EL['botaoCadastre'])
     end
 
     def alert (message)

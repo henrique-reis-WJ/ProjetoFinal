@@ -24,17 +24,31 @@ class Methods
         end
         
     #Metodo para clicar em um botão com determinado nome    
-        def clickButtonByText(element)
+        def clickButton(element)
             find_button(element).click()
         rescue SomeExceptionClass => error
             raise "Ops, #{error}"
         end
     
     #Metodo para clicar em um botão com determinado nome 
-        def clickLinkByText(element)
+        def clickLink(element)
             find_link(element).click()
         rescue SomeExceptionClass => error
             raise "Ops, #{error}"
         end
-    
-    end
+
+    #Metodo para encontrar elemento qualquer e clicar nele
+        def clickEl(element)
+            find(element).click()
+        rescue SomeExceptionClass => error
+            raise "Ops, #{error}"
+        end
+  
+    #Metodo para passar o mouse por cima
+        def mouseOuver(element)
+            find(element).hover
+        rescue SomeExceptionClass => error
+            raise "Ops, #{error}"
+        end
+      
+end

@@ -18,5 +18,15 @@ linkEntre: 'Entre'
 botaoEntre: 'Entre'
 
 #Elementos de Busca
-searchField: 'input[placeholder="Qual artigo de festa você está procurando?"]'
+searchField: '#search'
 botaoPequisa: 'Pesquisa'
+
+#Elementos do carrinho
+categoriaDataComemorativa: '#ui-id-6'
+subcategoriaHalloween: '#ui-id-7'
+mascara: "#product-item-info_4"
+addToCart: "#product-addtocart-button"
+malevola: "#product-item-info_9"
+sacola: "Meu Carrinho"
+lixo: ".secondary"
+#subcategoriaHalloween: 'Halloween'
