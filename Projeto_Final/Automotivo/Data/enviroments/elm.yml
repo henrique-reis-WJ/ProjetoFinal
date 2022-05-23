@@ -1,11 +1,21 @@
-### Create Account ###
+### Links ###
+linkCreate: "Cadastre-se"
+linkLogin: "Entre"
+
+### Buttons ###
+btnCreate: "Cadastre-se"
+btnLogin: "Entre"
+btnSearch: "Pesquisa"
+btnCart: ".action showcart"
+
+### Info ###
 nameCreate: "#firstname"
 lastCreate: "#lastname"
 emailCreate: "#email_address"
 passwordCreate: "#password"
 passConfirm: "#password-confirmation"
-#btnCreate: "Cadastre-se"
-
-### Login ###
 emailLogin: "#email"
 passwordLogin: "#pass"
+
+### Search ###
+fieldSearch: "#search"

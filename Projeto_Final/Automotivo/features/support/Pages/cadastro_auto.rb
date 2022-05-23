@@ -2,7 +2,7 @@ class CreateAccount < Methods
     include Capybara::DSL
 
     def BtnCreate
-        click_link 'Cadastre-se'
+        clickLink(EL['linkCreate'])
     end 
 
     def FieldsSchema (name_p, lastname_p, email_p, password_p, confirm_pass_p)
@@ -11,7 +11,7 @@ class CreateAccount < Methods
         fillFields(EL['emailCreate'], email_p)
         fillFields(EL['passwordCreate'], password_p)
         fillFields(EL['passConfirm'], confirm_pass_p)
-        click_button 'Cadastre-se'
+        clickButton(EL['btnCreate']) 
     end
 
     def FieldsFake
@@ -20,15 +20,15 @@ class CreateAccount < Methods
         fillFields(EL['emailCreate'],Faker::Internet.email)
         fillFields(EL['passwordCreate'],'pa$$W0rd')
         fillFields(EL['passConfirm'],'pa$$W0rd')
-        click_button 'Cadastre-se'
+        clickButton(EL['btnCreate'])
     end
     
     def ResultOK (message_p)
-        wait 10.seconds until assert_text (message_p)
+        texts(message_p)
     end
 
     def ResultError (message_p)
-        wait 10.seconds until assert_text (message_p)
+        texts(message_p)
     end
 
 
