@@ -6,15 +6,13 @@ Funcionalidade: Realizar Login
     @loginValido
     Cenario: Usuário Cadastrado
         Dado que estou na 'pagina inicial'
-        Quando quero fazer login 
-        E preencho meus dados "henrique.reis3@webjump.com.br" e "senha123@"
-        Então estarei logado
+        E quero fazer login com meus dados "henrique.reis3@webjump.com.br" e "senha123@"
+        Então estarei logado na 'Minha Conta'
 
     @loginInvalido
     Esquema do Cenario: Login Inválido 
         Dado que estou na 'pagina inicial'
-        Quando quero fazer login
-        E preencho meus dados "<email>" e "<senha>"
+        Quando quero fazer login com os dados "<email>" e "<senha>"
         Então devo ler a '<mensagem>'
 
     Exemplos: Dados Inválidos

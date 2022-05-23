@@ -8,14 +8,14 @@ include Capybara::DSL
     def FieldsLogin (p_email, p_senha)
         fillFields(EL['emailLogin'], p_email)
         fillFields(EL['passwordLogin'], p_senha)
-        find('#send2').click
+        click_button 'Entre'
     end
     
-    def ResultLoginOK
-        wait 5.seconds until assert_text('Minha Conta')
+    def ResultLoginOK(message_p)
+        texts(message_p)
     end
 
-    def ResultLoginError (error_p)
-        wait 5.seconds until assert_text(error_p)
+    def ResultLoginError (message_p)
+        texts(message_p)
     end
 end

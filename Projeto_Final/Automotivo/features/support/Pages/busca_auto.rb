@@ -1,4 +1,4 @@
-class Searchs 
+class Searchs < Methods
 include Capybara::DSL
 
     def SearchField (search_p)
@@ -7,7 +7,7 @@ include Capybara::DSL
     end
 
     def ResultSearch (message_p)
-        wait 10.seconds until assert_text (message_p)
+        texts(message_p)
     end
     
 end
