@@ -6,6 +6,8 @@ Before do
     @createAccount = CreateAccount.new
     @shops = Shops.new
     @searchs = Searchs.new
+    @rmcart = RmCart.new
+
     Capybara.current_session.driver.browser.manage.delete_all_cookies
     page.driver.browser.manage.window.resize_to(1920, 1080)
 end
