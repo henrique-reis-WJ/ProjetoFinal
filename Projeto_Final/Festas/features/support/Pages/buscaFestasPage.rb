@@ -5,7 +5,11 @@ class SearchProduct < Methods
         fillFields(EL['searchField'], message)
     end
 
-    def clickButton
-        clickButtonByText(EL['botaoPequisa'])
+    def clickButtonSearch
+        clickButton(EL['botaoPequisa'])
     end
+
+    #def validateProduct
+     #   validateCss(element)
+    #end
 end

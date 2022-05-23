@@ -3,7 +3,7 @@ Quando("busco por {string}") do |message|
 end
 
 Quando("clico em pesquisar") do
-  @search.clickButton
+  @search.clickButtonSearch
 end
 
 Então("vejo produto na tela") do

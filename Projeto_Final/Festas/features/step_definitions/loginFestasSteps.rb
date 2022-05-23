@@ -7,7 +7,7 @@ Quando("preencho {string} e {string}") do |email, senha|
 end
 
 Quando("clico no botão entre") do
-  @signin.clickButton
+  @signin.clickButtonLogin
 end
 
 #Então("devo ver a mensagem {string}") do |mesagem|

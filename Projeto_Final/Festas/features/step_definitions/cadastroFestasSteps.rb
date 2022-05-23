@@ -15,7 +15,7 @@ Quando ("prencho nome, sobrenome, email, senha e confirmar senha validos") do
 end
 
 Quando("clico no botão criar conta") do
-  @signup.clickButton
+  @signup.clickButtonRegister
 end
 
 Então("devo ver a mensagem {string}") do |mensagem|

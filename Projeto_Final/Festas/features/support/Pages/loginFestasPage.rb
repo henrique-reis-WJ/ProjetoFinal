@@ -2,7 +2,7 @@ class SignInPage < Methods
     include Capybara::DSL
 
     def accessSignIn
-        clickLinkByText(EL['linkEntre'])
+        clickLink(EL['linkEntre'])
     end
       
     def form (email_login, password_login)
@@ -10,8 +10,8 @@ class SignInPage < Methods
         fillFields(EL['passwordLogin'], password_login)
     end
       
-    def clickButton
-        clickButtonByText(EL['botaoEntre'])
+    def clickButtonLogin
+        clickButton(EL['botaoEntre'])
     end
 
 end
