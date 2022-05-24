@@ -11,11 +11,7 @@ class SignInPage < Methods
     end
       
     def clickButtonLogin
-        clickButton(EL['botaoEntre'])
+        clickButton(EL['buttonEntre'])
     end
 
 end
-
-   #def alertLogin
-     #   validateMessage(message)
-    #end

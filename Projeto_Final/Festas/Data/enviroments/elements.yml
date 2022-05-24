@@ -15,18 +15,19 @@ botaoCadastre: 'Cadastre-se'
 emailLogin: '#email'
 passwordLogin: '#pass'
 linkEntre: 'Entre'
-botaoEntre: 'Entre'
+buttonEntre: 'Entre'
 
 #Elementos de Busca
 searchField: '#search'
-botaoPequisa: 'Pesquisa'
+buttonSearch: 'Pesquisa'
 
 #Elementos do carrinho
-categoriaDataComemorativa: '#ui-id-6'
-subcategoriaHalloween: '#ui-id-7'
-mascara: "#product-item-info_4"
+categoryDataComemorativa: '#ui-id-6'
+subcategoryHalloween: '#ui-id-7'
+mask: "#product-item-info_4"
 addToCart: "#product-addtocart-button"
 malevola: "#product-item-info_9"
-sacola: "Meu Carrinho"
-lixo: ".secondary"
+cart: "Meu Carrinho"
+remove: ".secondary"
+confirm: "CONFIRMAR"
 #subcategoriaHalloween: 'Halloween'

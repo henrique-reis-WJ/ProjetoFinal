@@ -6,10 +6,11 @@ class SearchProduct < Methods
     end
 
     def clickButtonSearch
-        clickButton(EL['botaoPequisa'])
+        clickButton(EL['buttonSearch'])
     end
 
-    #def validateProduct
-     #   validateCss(element)
-    #end
+    def validateAddProduct
+        validateCss(EL['mask'])
+    end
+
 end
