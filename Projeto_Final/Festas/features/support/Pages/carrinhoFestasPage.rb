@@ -2,15 +2,15 @@ class ShoppingCart < Methods
     include Capybara::DSL
 
     def chooseFirstCategory
-        mouseOuver(EL['categoriaDataComemorativa'])
+        mouseOuver(EL['categoryDataComemorativa'])
     end
 
     def chooseSecondCategory
-        clickEl(EL['subcategoriaHalloween'])
+        clickEl(EL['subcategoryHalloween'])
     end
 
     def chooseProduct
-        clickEl(EL['mascara'])
+        clickEl(EL['mask'])
     end
 
     def chooseSecondProduct
@@ -21,20 +21,19 @@ class ShoppingCart < Methods
         clickEl(EL['addToCart'])
     end
 
-    def remove
-        sleep 5
-        find_link("Meu Carrinho").click
-       # sleep 5
-        first(".secondary").click
-        click_button("CONFIRMAR")
+    def clickShopCart
+       sleep 5
+       clickLink(EL['cart'])
     end
 
-    #def clickShopCart
-     #   clickLink(EL['sacola'])
-    #end
-    
-    #def clickRemove
-     #   clickEl(EL['lixo'])
-    #end
+    #Remover Produto
+    def clickRemove
+        sleep 5
+        clickFirstEl(EL['remove'])
+    end
 
+    def clickConfirm
+        clickButton(EL['confirm'])
+    end
+    
 end

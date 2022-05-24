@@ -32,7 +32,7 @@ class Methods
     
     #Metodo para clicar em um botão com determinado nome 
         def clickLink(element)
-            find_link(element).click()
+        find_link(element).click()
         rescue SomeExceptionClass => error
             raise "Ops, #{error}"
         end
@@ -40,6 +40,13 @@ class Methods
     #Metodo para encontrar elemento qualquer e clicar nele
         def clickEl(element)
             find(element).click()
+        rescue SomeExceptionClass => error
+            raise "Ops, #{error}"
+        end
+
+    #Metodo que busca pelo first e clica no elementos
+        def clickFirstEl(element)
+        first(element).click()
         rescue SomeExceptionClass => error
             raise "Ops, #{error}"
         end

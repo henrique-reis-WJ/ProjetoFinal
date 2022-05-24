@@ -15,7 +15,7 @@ Quando("clico em adicionar ao carrinho") do
 end
 
 Quando("clico em remover do carrinho") do
-  @shopcart.remove
-    # @shopcart.clickShopCart
-    #@shopcart.clickRemove
+    @shopcart.clickShopCart
+    @shopcart.clickRemove
+    @shopcart.clickConfirm
 end
