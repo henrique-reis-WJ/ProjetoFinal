@@ -23,7 +23,7 @@ end
 at_exit do
 ReportBuilder.configure do |config|
     config.json_path = 'Data/Reports/report.json'
-    config.report_path = 'Data/Reports'
+    config.report_path = 'Data/Reports/Relatorio'
     config.report_types = [:html]
     config.report_title = 'Resultado Cenários'
     config.include_images = true
