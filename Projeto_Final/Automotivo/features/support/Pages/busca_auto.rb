@@ -2,7 +2,7 @@ class Searchs < Methods
 include Capybara::DSL
 
     def SearchField (search_p)
-        find('#search').set search_p
+        fillFields(EL['fieldSearch'], search_p)
         click_button 'Pesquisa'
     end
 
