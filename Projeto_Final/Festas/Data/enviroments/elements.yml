@@ -30,7 +30,11 @@ malevola: "#product-item-info_9"
 cart: "Meu Carrinho"
 remove: ".secondary"
 confirm: "CONFIRMAR"
+<<<<<<< HEAD
 #subcategoriaHalloween: 'Halloween'
 
 #Elementos favoritos
 favoriteMask: "Adicionar à lista de desejos"
+=======
+#subcategoriaHalloween: 'Halloween'
+>>>>>>> 0a05a1d0ad3f968d947479892753251e5e114b01
