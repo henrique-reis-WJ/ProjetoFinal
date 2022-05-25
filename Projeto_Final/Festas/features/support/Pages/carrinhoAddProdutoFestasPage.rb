@@ -21,19 +21,4 @@ class ShoppingCart < Methods
         clickEl(EL['addToCart'])
     end
 
-    def clickShopCart
-       sleep 5
-       clickLink(EL['cart'])
-    end
-
-    #Remover Produto
-    def clickRemove
-        sleep 5
-        clickFirstEl(EL['remove'])
-    end
-
-    def clickConfirm
-        clickButton(EL['confirm'])
-    end
-    
 end

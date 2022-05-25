@@ -1,7 +1,7 @@
 #language: pt
 
 @RemoverProdutoCarrinho
-Funcionalidade: remover Produto do Carrinho
+Funcionalidade: Remover Produto do Carrinho
 
 @RemoverProdutoLogado
 Cenario: Remover produto logado

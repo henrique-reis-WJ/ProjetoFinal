@@ -13,9 +13,3 @@ end
 Quando("clico em adicionar ao carrinho") do
     @shopcart.addToCart
 end
-
-Quando("clico em remover do carrinho") do
-    @shopcart.clickShopCart
-    @shopcart.clickRemove
-    @shopcart.clickConfirm
-end

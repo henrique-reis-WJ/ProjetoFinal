@@ -57,5 +57,12 @@ class Methods
         rescue SomeExceptionClass => error
             raise "Ops, #{error}"
         end
+
+    #Metodo para passar o mouse por cima encontrando elemento pelo link
+        def mouseOuverLink(element)
+            find_link(element).hover
+        rescue SomeExceptionClass => error
+            raise "Ops, #{error}"
+        end
       
 end
