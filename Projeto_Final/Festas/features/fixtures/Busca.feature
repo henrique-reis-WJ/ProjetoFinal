@@ -4,7 +4,7 @@
 Funcionalidade: Busca
 
 #Usuário logado
-@BuscaValidaLogado
+@BuscaValidaLogado 
 Cenario: Busca valida logado no sistema
 Dado que acesso a pagina principal
 E clico em entrar
