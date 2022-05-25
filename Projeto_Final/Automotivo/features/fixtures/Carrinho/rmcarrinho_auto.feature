@@ -1,5 +1,6 @@
 #language:pt
 
+@rmCarrinho
 Funcionalidade: Remover Produtos do Carrinho
 
     @rmCarrinhoLogado
@@ -12,7 +13,7 @@ Funcionalidade: Remover Produtos do Carrinho
         Então devo ver 'Você não possui nenhum item em seu carrinho'
 
     @rmCarrinhoDeslogado
-    Cenário: Remover do Carrinho Logado
+    Cenário: Remover do Carrinho Deslogado
         Dado que estou na 'pagina inicial'
         E clico na barra de pesquisa e digito corretamente "roadmaster"
         E quero adicionar ao carrinho 

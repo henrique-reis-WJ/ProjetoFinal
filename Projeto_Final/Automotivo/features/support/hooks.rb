@@ -7,6 +7,7 @@ Before do
     @shops = Shops.new
     @searchs = Searchs.new
     @rmcart = RmCart.new
+    @wishlist = Wishlist.new
 
     Capybara.current_session.driver.browser.manage.delete_all_cookies
     page.driver.browser.manage.window.resize_to(1920, 1080)

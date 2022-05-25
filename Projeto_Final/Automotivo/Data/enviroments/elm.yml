@@ -19,3 +19,7 @@ passwordLogin: "#pass"
 
 ### Search ###
 fieldSearch: "#search"
+
+### Messages ###
+wishERROR: "Você deve logar ou registrar-se"
+wishOK: "adicionado à sua lista de desejos"
