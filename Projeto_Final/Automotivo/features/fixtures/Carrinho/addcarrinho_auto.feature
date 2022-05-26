@@ -10,7 +10,7 @@ Funcionalidade: Adicionar Produtos ao Carrinho
         E quero adicionar ao carrinho 
         E clico na barra de pesquisa e digito corretamente "multimidia"
         E quero outro produto
-        Então devo ver 'Você adicionou'
+        Então vejo 'Você adicionou'
 
     @carrinhoDeslog
     Cenário: Adicionar ao Carrinho sem Login

@@ -10,7 +10,7 @@ Quando("quero outro produto") do
   @shops.Product2
 end
 
-  Então("devo ver {string}") do |message2|
+  Então("vejo {string}") do |message2|
     @shops.ShopOk(message2)
   end
 
