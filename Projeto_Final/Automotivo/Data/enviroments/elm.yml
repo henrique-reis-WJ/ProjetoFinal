@@ -17,6 +17,13 @@ passConfirm: "#password-confirmation"
 emailLogin: "#email"
 passwordLogin: "#pass"
 
+### Checkout ###
+nameCheckout: "input[name='firstname']"
+lastCheckout: "input[name='lastname']"
+adressCheckout: "input[name='street[0]']"
+numCheckout: "input[name='street[1]']"
+
+
 ### Search ###
 fieldSearch: "#search"
 
