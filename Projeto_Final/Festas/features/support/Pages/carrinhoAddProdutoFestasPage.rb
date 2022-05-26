@@ -10,11 +10,11 @@ class ShoppingCart < Methods
     end
 
     def chooseProduct
-        clickEl(EL['mask'])
+        clickFirstEl(EL['firstProduct'])
     end
 
     def chooseSecondProduct
-        clickEl(EL['malevola'])
+        all('.product-item-link')[3].click()
     end
 
     def addToCart

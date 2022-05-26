@@ -22,15 +22,15 @@ searchField: '#search'
 buttonSearch: 'Pesquisa'
 
 #Elementos do carrinho
-categoryDataComemorativa: '#ui-id-6'
-subcategoryHalloween: '#ui-id-7'
-mask: "#product-item-info_4"
+categoryDataComemorativa: '#ui-id-2'
+subcategoryHalloween: '#ui-id-4'
+firstProduct: ".product-item-link"
+secondProduct: ".product-item-link"
 addToCart: "#product-addtocart-button"
-malevola: "#product-item-info_9"
 cart: "Meu Carrinho"
 remove: ".secondary"
 confirm: "CONFIRMAR"
 #subcategoriaHalloween: 'Halloween'
 
 #Elementos favoritos
-favoriteMask: "Adicionar à lista de desejos"
+favoriteLink: "Adicionar à lista de desejos"
