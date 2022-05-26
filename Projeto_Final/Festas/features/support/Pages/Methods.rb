@@ -66,3 +66,9 @@ class Methods
         end
       
 end
+
+=begin
+    def clickAllEl(element,value)
+    all(element)[value].click()
+    end
+=end

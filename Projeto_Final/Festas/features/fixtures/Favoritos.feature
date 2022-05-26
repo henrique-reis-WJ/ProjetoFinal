@@ -11,7 +11,7 @@ Quando preencho 'maliriq@mailinator.com' e 'Pa$$w0rd!'
 E clico no botão entre
 E escolho um produto
 E clico em adicionar à lista de desejos
-Então devo ver a mensagem 'Você adicionou Mascara para o seu carrinho de compras.'
+Então devo ver a mensagem 'foi adicionado à sua lista de desejos'
 
 @AdicionarFavoritosDeslogado
 Cenario: Adicionar 1 produto ao carrinho logado

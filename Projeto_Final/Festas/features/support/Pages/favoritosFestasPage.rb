@@ -2,11 +2,11 @@ class Favorites < Methods
 include Capybara::DSL
 
 def hoverFavorite
-    mouseOuverLink(EL['favoriteMask'])
+    mouseOuverLink(EL['favoriteLink'])
 end
 
 def clickFavorite
-    clickLink(EL['favoriteMask'])
+    clickLink(EL['favoriteLink'])
 end
 
 end
