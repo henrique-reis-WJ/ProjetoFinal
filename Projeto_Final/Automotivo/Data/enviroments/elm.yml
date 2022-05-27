@@ -22,7 +22,10 @@ nameCheckout: "input[name='firstname']"
 lastCheckout: "input[name='lastname']"
 adressCheckout: "input[name='street[0]']"
 numCheckout: "input[name='street[1]']"
-
+neibCheckout: "input[name='street[2]']"
+cityCheckout: "input[name='city']"
+postcodeCheckout: "input[name='postcode']"
+phoneCheckout: "input[name='telephone']"
 
 ### Search ###
 fieldSearch: "#search"
