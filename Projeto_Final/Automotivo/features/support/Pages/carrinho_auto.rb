@@ -20,7 +20,7 @@ include Capybara::DSL
         click_button 'Adicionar ao Carrinho'
     end
 
-    def ShopOk (message_p)
-        texts(message_p)
+    def ShopOk
+        texts('Você adicionou')
     end
 end
