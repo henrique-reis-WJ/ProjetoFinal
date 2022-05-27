@@ -32,21 +32,21 @@ class Methods
     
     #Metodo para clicar em um botão com determinado nome 
         def clickLink(element)
-        find_link(element).click()
+        find_link(element, wait: 10).click()
         rescue SomeExceptionClass => error
             raise "Ops, #{error}"
         end
 
     #Metodo para encontrar elemento qualquer e clicar nele
         def clickEl(element)
-            find(element).click()
+            find(element, wait: 10).click()
         rescue SomeExceptionClass => error
             raise "Ops, #{error}"
         end
 
     #Metodo que busca pelo first e clica no elementos
         def clickFirstEl(element)
-        first(element).click()
+        first(element, wait: 10).click()
         rescue SomeExceptionClass => error
             raise "Ops, #{error}"
         end
@@ -68,7 +68,5 @@ class Methods
 end
 
 =begin
-    def clickAllEl(element,value)
-    all(element)[value].click()
-    end
+    all('element')[posição].click()
 =end

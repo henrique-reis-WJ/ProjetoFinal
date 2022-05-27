@@ -7,5 +7,5 @@ Quando("clico em pesquisar") do
 end
 
 Então("vejo produto na tela") do
-  @search.validateAddProduct
+  @search.validateSearchProduct
 end

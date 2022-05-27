@@ -37,7 +37,7 @@ Exemplos:
 Cenario: E-mail já cadastrado
 Dado que acesso a pagina principal
 E clico em criar conta
-Quando prencho "Bianca", "Moura", "qatyz@mailinator.com", "Abcd1234*" e "Abcd1234*"
+Quando prencho "Bianca", "Moura", "xoroky@mailinator.com", "Abcd1234*" e "Abcd1234*"
 E clico no botão criar conta
 Então devo ver a mensagem "Já existe uma conta com este endereço de e-mail. Se você tem certeza que é o seu endereço de e-mail, clique aqui para obter sua senha e acessar a sua conta."
 

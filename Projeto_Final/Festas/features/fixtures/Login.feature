@@ -37,6 +37,6 @@ Exemplos:
 
 @LoginSucesso
 Cenario: Realizar login com sucesso
-Quando preencho 'maliriq@mailinator.com' e 'Pa$$w0rd!'
+Quando preencho 'xoroky@mailinator.com' e 'Pa$$w0rd!'
 E clico no botão entre
 Então devo ver a mensagem "Minha Conta"

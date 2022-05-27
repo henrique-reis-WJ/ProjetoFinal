@@ -1,20 +1,12 @@
 class ShoppingCart < Methods
     include Capybara::DSL
 
-    def chooseFirstCategory
-        mouseOuver(EL['categoryDataComemorativa'])
-    end
-
-    def chooseSecondCategory
-        clickEl(EL['subcategoryHalloween'])
-    end
-
     def chooseProduct
-        clickFirstEl(EL['firstProduct'])
+        clickFirstEl(EL['product'])
     end
 
     def chooseSecondProduct
-        all('.product-item-link')[3].click()
+        clickFirstEl(EL['product'])
     end
 
     def addToCart
