@@ -11,3 +11,5 @@ gem 'rufo'
 gem 'ffi'
 gem 'yaml'
 gem 'pry'
+gem 'cpf_faker'
+gem "brazilian_documents"

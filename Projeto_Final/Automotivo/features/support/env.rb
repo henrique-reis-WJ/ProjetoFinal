@@ -5,6 +5,7 @@ require 'rspec'
 require 'yaml'
 require 'faker'
 require 'pry'
+require 'cpf_faker'
 
 Capybara.configure do |config|
     config.default_driver = :selenium_chrome

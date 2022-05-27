@@ -18,6 +18,8 @@ emailLogin: "#email"
 passwordLogin: "#pass"
 
 ### Checkout ###
+emailCheckout: "input[name='username']"
+cpfCheckout: "input[name='custom_attributes[taxvat]']"
 nameCheckout: "input[name='firstname']"
 lastCheckout: "input[name='lastname']"
 adressCheckout: "input[name='street[0]']"
