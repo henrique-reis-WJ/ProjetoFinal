@@ -1,4 +1,4 @@
-Dado("quero fazer checkout") do
+Dado("quero fazer checkout logado") do
     @completeflux.checkoutLog
 end
     

@@ -9,4 +9,5 @@ Funcionalidade: Fluxo End-to-End
         E clico na barra de pesquisa e digito corretamente "roadmaster"
         E quero adicionar ao carrinho
         E vejo 'Você adicionou'
-        E quero fazer checkout
+        E quero fazer checkout logado
+        Então verei a mensagem "Compra"

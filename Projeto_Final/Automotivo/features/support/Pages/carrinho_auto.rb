@@ -11,7 +11,7 @@ include Capybara::DSL
     def Product1 
         first(".product-image-photo").click()
         #binding.pry
-        find("option[value='{5}']").select_option
+        find("option[value='#{5}']").select_option
         click_button 'Adicionar ao Carrinho'
     end
     
