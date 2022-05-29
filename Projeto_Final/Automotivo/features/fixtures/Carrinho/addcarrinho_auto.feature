@@ -2,7 +2,7 @@
 
 Funcionalidade: Adicionar Produtos ao Carrinho
 
-    @carrinhoLog
+    @carrinhoLogado
     Cenário: Adicionar ao Carrinho Logado
         Dado que estou na 'pagina inicial'
         E quero fazer login com meus dados "henrique.reis3@webjump.com.br" e "senha123@"
