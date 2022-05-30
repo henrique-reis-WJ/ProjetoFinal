@@ -20,6 +20,7 @@ buttonEntre: 'Entre'
 #Elementos de Busca
 searchField: '#search'
 buttonSearch: 'Pesquisa'
+christmasTree: 'Árvore de Natal Decorada'
 
 #Elementos do carrinho
 product: ".product-item-link" #arvore de natal e plano mensal possuem mesma classe

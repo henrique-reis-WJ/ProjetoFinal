@@ -2,27 +2,18 @@ class Methods
     include Capybara::DSL
     include RSpec::Matchers
     
+    #Metodo para selecionar uma opção quando tenho uma lista de opções
+        def selectOption(value)
+            find("option[value='#{value}']").select_option
+        end
+  
     #Metodo que busca um elemento e preencher com um valor
         def fillFields(element, value)
             find(element).set(value)
         rescue SomeExceptionClass => error
             raise "Elemento: #{element} não encontrado, #{error}"
         end
-    
-    #Metodo para validar elemento css
-        def validateCss(element)
-            expect(page).to have_css(element, visible: true)
-        rescue SomeExceptionClass => error
-            raise "Elemento: #{element} não encontrado, #{error}"
-        end
-        
-    #Metodo para validar a mensagem
-        def validateMessage(message)
-            assert_text(message, wait: 10)
-        rescue SomeExceptionClass => error
-            raise "Ops, #{error}"
-        end
-        
+            
     #Metodo para clicar em um botão com determinado nome    
         def clickButton(element)
             find_button(element).click()
@@ -64,7 +55,28 @@ class Methods
         rescue SomeExceptionClass => error
             raise "Ops, #{error}"
         end
-      
+
+    #Metodo para validar link
+        def validateLink(element)
+            expect(page).to have_link(element, visible: true)
+        rescue SomeExceptionClass => error
+            raise "Ops, #{error}"
+        end
+
+    #Metodo para validar elemento css
+        def validateCss(element)
+            expect(page).to have_css(element, visible: true)
+        rescue SomeExceptionClass => error
+            raise "Elemento: #{element} não encontrado, #{error}"
+        end
+        
+    #Metodo para validar a mensagem
+        def validateMessage(message)
+            assert_text(message, wait: 10)
+        rescue SomeExceptionClass => error
+            raise "Ops, #{error}"
+        end
+
 end
 
 =begin
