@@ -1,12 +1,8 @@
 Quando("escolho um produto") do
-    @shopcart.chooseFirstCategory
-    @shopcart.chooseSecondCategory
     @shopcart.chooseProduct
 end
 
 Quando("escolho mais um produto produto") do
-    @shopcart.chooseFirstCategory
-    @shopcart.chooseSecondCategory
     @shopcart.chooseSecondProduct
 end
  

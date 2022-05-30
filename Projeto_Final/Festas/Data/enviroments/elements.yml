@@ -22,15 +22,31 @@ searchField: '#search'
 buttonSearch: 'Pesquisa'
 
 #Elementos do carrinho
-categoryDataComemorativa: '#ui-id-2'
-subcategoryHalloween: '#ui-id-4'
-firstProduct: ".product-item-link"
-secondProduct: ".product-item-link"
+product: ".product-item-link" #arvore de natal e plano mensal possuem mesma classe
 addToCart: "#product-addtocart-button"
 cart: "Meu Carrinho"
 remove: ".secondary"
 confirm: "CONFIRMAR"
-#subcategoriaHalloween: 'Halloween'
 
 #Elementos favoritos
 favoriteLink: "Adicionar à lista de desejos"
+
+#Compra completa
+checkout: "#top-cart-btn-checkout"
+flatRate: "input[value='flatrate_flatrate']"
+buttonContinue: "button[class='button action continue primary']"
+paymentMethod: ".radio[value='banktransfer'"
+finalizeOrder: "button[class='action primary checkout']"
+
+#Endereço de entrega / Cenario nao logado
+email: "input[name='username']"
+cpf: "input[name='custom_attributes[taxvat]']"
+name: "input[name='firstname']"
+lastName: "input[name='lastname']"
+adress: "input[name='street[0]']"
+number: "input[name='street[1]']"
+district: "input[name='street[2]']"
+city: "input[name='city']"
+postcode: "input[name='postcode']"
+telephone: "input[name='telephone']"
+

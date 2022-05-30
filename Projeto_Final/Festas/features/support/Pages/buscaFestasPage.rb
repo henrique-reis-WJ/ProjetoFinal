@@ -8,9 +8,10 @@ class SearchProduct < Methods
     def clickButtonSearch
         clickButton(EL['buttonSearch'])
     end
-
-    def validateAddProduct
-        validateCss(EL['mask'])
+#PROBLEMA!!!!!!!!!!!1
+    def validateSearchProduct
+        expect(page).to have_link('[placeholder*=Decorada]', visible: true)
+        #validateCss(EL['mask'])
     end
 
 end

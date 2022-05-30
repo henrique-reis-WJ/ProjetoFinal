@@ -8,6 +8,7 @@ Before do |scenario|
     @shopcart = ShoppingCart.new
     @removeProduct = RemoveProduct.new
     @addFavorites = Favorites.new
+    @fullFlow = PurchaseCompleted.new
     Capybara.current_session.driver.browser.manage.delete_all_cookies
     page.driver.browser.manage.window.resize_to(1920, 1080)
 end

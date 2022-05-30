@@ -4,6 +4,7 @@ require 'report_builder'
 require "faker"
 require "rspec"
 require 'yaml'
+require "cpf_faker"
 
 EL = YAML.load_file('./Data/enviroments/elements.yml')
 
