@@ -1,5 +1,6 @@
 #language:pt
 
+@favoritos
 Funcionalidade: Adicionar Produtos aos Favoritos
 
     @favoritosLogado

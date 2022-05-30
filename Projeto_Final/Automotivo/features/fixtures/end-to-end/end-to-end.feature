@@ -1,8 +1,9 @@
 #language:pt
 
+@end-end
 Funcionalidade: Fluxo End-to-End
 
-@fluxoLogado
+    @fluxoLogado
     Cenário: End-to-End de Usuário com Login
         Dado que estou na 'pagina inicial'
         E quero fazer login com meus dados "henrique.reis3@webjump.com.br" e "senha123@"
