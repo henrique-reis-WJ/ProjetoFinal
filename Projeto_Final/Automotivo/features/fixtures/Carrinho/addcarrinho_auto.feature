@@ -1,5 +1,6 @@
 #language:pt
 
+@carrinho
 Funcionalidade: Adicionar Produtos ao Carrinho
 
     @carrinhoLogado

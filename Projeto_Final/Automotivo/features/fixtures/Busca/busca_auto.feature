@@ -21,7 +21,7 @@ Funcionalidade: Realizar Busca no Site
     Dado que estou na 'pagina inicial'
     E quero fazer login com meus dados "henrique.reis3@webjump.com.br" e "senha123@"
     Quando clico na barra de pesquisa e digito incorretamente 'Magento'
-    Então verei a mensagem de busca invalida 'A sua pesquisa não retornou resultados.'
+    Então verei a mensagem de busca invalida
 
     @buscaInvalidaDes
     Cenário: Busca Invalida Sem Login

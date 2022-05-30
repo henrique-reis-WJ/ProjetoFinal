@@ -10,7 +10,7 @@ Funcionalidade: Remover Produtos do Carrinho
         E clico na barra de pesquisa e digito corretamente "roadmaster"
         E quero adicionar ao carrinho 
         E quero remover o produto do carrinho
-        Então devo ver 'Você não possui nenhum item em seu carrinho'
+        Então devo ver a mensagem de sucesso
 
     @rmCarrinhoDeslogado
     Cenário: Remover do Carrinho Deslogado
@@ -18,4 +18,4 @@ Funcionalidade: Remover Produtos do Carrinho
         E clico na barra de pesquisa e digito corretamente "roadmaster"
         E quero adicionar ao carrinho 
         E quero remover o produto do carrinho
-        Então devo ver 'Você não possui nenhum item em seu carrinho'
+        Então devo ver a mensagem de sucesso
