@@ -23,5 +23,4 @@ class Methods
     rescue SomeExceptionClass => error
         raise "Texto: #{value} não encontrado na pagina, #{error}"
     end
-       
 end
