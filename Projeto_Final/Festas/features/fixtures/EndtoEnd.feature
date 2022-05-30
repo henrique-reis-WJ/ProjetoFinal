@@ -1,6 +1,6 @@
 #language: pt
 
-@carrinho
+@EndToEnd
 Funcionalidade: Compra completa
 
 @CompraLogado
@@ -14,6 +14,19 @@ E clico em pesquisar
 E escolho um produto
 E clico em adicionar ao carrinho
 E clico em Avançar para o Checkout
+E escolho método de envio
+E escolho método de pagamento
+Então devo ver a mensagem 'Obrigado por sua compra!'
+
+@CompraNaoLogado
+Cenario: Adicionar 1 produto ao carrinho não logado
+Dado que acesso a pagina principal
+Quando busco por "Arvore de Natal"
+E clico em pesquisar
+E escolho um produto
+E clico em adicionar ao carrinho
+E clico em Avançar para o Checkout
+E preencho formulário de endereço de entrega
 E escolho método de envio
 E escolho método de pagamento
 Então devo ver a mensagem 'Obrigado por sua compra!'

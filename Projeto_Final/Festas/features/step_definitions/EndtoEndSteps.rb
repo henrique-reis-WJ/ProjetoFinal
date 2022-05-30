@@ -3,6 +3,10 @@ Quando("clico em Avançar para o Checkout") do
     @fullFlow.clickCheckout
 end
 
+Quando("preencho formulário de endereço de entrega") do
+    @fullFlow.checkoutForm
+end
+
 Quando("escolho método de envio") do
     @fullFlow.chooseDeliveryMethods
 end
