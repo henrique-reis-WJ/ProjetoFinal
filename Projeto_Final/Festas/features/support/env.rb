@@ -5,6 +5,7 @@ require "faker"
 require "rspec"
 require 'yaml'
 require "cpf_faker"
+require "pry"
 
 EL = YAML.load_file('./Data/enviroments/elements.yml')
 

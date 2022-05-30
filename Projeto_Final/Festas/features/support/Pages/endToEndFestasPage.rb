@@ -6,6 +6,7 @@ def clickCheckout
 end
 
 def checkoutForm
+    #binding.pry
     fillFields(EL['email'], Faker::Internet.email)
     fillFields(EL['cpf'], Faker::CPF.numeric)
     fillFields(EL['name'], Faker::Name.name)
@@ -13,7 +14,7 @@ def checkoutForm
     fillFields(EL['adress'], Faker::Address.street_name)
     fillFields(EL['number'], Faker::Number.number(3))
     fillFields(EL['district'], Faker::Address.street_name)
-    find("option[value='#{486}']").select_option
+    selectOption(486)
     fillFields(EL['city'], Faker::Address.city)
     fillFields(EL['postcode'], Faker::Number.number(8))
     fillFields(EL['telephone'], Faker::Number.number(11))
