@@ -6,8 +6,12 @@ include Capybara::DSL
         click_button 'Pesquisa'
     end
 
-    def ResultSearch (message_p)
-        texts(message_p)
+    def ResultSearchOK 
+        texts('Resultados da busca')
+    end
+
+    def ResultSearchError
+        texts('A sua pesquisa não retornou resultados.')
     end
     
 end

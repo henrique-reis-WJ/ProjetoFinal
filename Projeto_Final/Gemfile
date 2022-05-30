@@ -11,4 +11,4 @@ gem 'rufo'
 gem 'ffi'
 gem 'yaml'
 gem 'pry'
-gem "cpf_faker"
+gem 'cpf_faker'
