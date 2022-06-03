@@ -34,9 +34,9 @@ favoriteLink: "Adicionar à lista de desejos"
 
 #Compra completa
 checkout: "#top-cart-btn-checkout"
-flatRate: "input[value='flatrate_flatrate']"
+flatRate: "input[value='tablerate_bestway']"
 buttonContinue: "button[class='button action continue primary']"
-paymentMethod: ".radio[value='banktransfer'"
+paymentMethod: ".radio[value='checkmo']"
 finalizeOrder: "button[class='action primary checkout']"
 
 #Endereço de entrega / Cenario nao logado
