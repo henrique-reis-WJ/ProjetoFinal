@@ -23,4 +23,11 @@ class Methods
     rescue SomeExceptionClass => error
         raise "Texto: #{value} não encontrado na pagina, #{error}"
     end
+
+    #Método para escolher uma opção
+    def selectOption(value)
+        find("option[value='#{value}']").select_option
+    rescue SomeExceptionClass => error
+        raise "Texto: #{value} não encontrado na pagina, #{error}"
+    end
 end

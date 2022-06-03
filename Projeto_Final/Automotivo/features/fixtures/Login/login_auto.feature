@@ -6,7 +6,7 @@ Funcionalidade: Realizar Login
     @loginValido
     Cenario: Usuário Cadastrado
         Dado que estou na 'pagina inicial'
-        Quando quero fazer login com meus dados "henrique.reis3@webjump.com.br" e "senha123@"
+        Quando quero fazer login com meus dados "henrique.reis@webjump.com.br" e "senha123@"
         Então estarei logado na 'Minha Conta'
 
     @loginInvalido

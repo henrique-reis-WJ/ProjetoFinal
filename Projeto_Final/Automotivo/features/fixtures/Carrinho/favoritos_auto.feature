@@ -11,7 +11,6 @@ Funcionalidade: Adicionar Produtos aos Favoritos
         Quando quero adicionar aos favoritos
         Então verei a mensagem de sucesso
 
-
     @favoritosDeslogado
     Cenário: Adicionar aos Favoritos Deslogado
         Dado que estou na 'pagina inicial'
